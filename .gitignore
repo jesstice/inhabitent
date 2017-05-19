@@ -1,3 +1,23 @@
+# Ignore everything in "wp-content" except these directories. #
+/*
+!.gitignore
+!plugins/
+!themes/
+!uploads/
+!README.md
+
+# Ignore everything in "plugins" except certain plugins. #
+plugins/*
+!plugins/inhabitent-functionality/
+!plugins/business-hours-widget/
+
+# Ignore everything in "themes" except the active theme. #
+themes/*
+!themes/inhabitent/
+
+# Ignore packages #
+themes/inhabitent/node_modules/
+
 # Ignore system files
 .DS_Store
 .DS_Store?
@@ -7,8 +27,3 @@
 ehthumbs.db
 *[Tt]humbs.db
 *.Trashes
-design/
-screenshot.png
-
-# Ignore npm packages
-node_modules/
