@@ -283,6 +283,9 @@ h1, h2, h3, h4, h5, h6 {
   clear: both; }
 
 /* Copy */
+a {
+  text-decoration: none; }
+
 p {
   margin-bottom: 1.5rem; }
 
@@ -520,8 +523,7 @@ a {
   .main-navigation li {
     position: relative; }
   .main-navigation a {
-    display: block;
-    text-decoration: none; }
+    display: block; }
 
 /* Small menu. */
 .menu-toggle,
@@ -752,6 +754,42 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.home-journal-display {
+  padding-left: 5rem;
+  padding-right: 5rem; }
+  .home-journal-display h2, .home-journal-display h3, .home-journal-display .post-read-more {
+    font-family: "Novecento", san-serif;
+    text-transform: uppercase; }
+  .home-journal-display h2 {
+    font-size: 2.25rem;
+    font-weight: normal;
+    text-align: center; }
+
+.home-latest-posts {
+  margin: 0;
+  padding: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  list-style: none; }
+  .home-latest-posts .post-meta-data {
+    margin-bottom: 0;
+    font-size: 0.75rem; }
+  .home-latest-posts .home-display-post {
+    width: 32%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column; }
+    .home-latest-posts .home-display-post .post-thumbnail {
+      height: 59%; }
+      .home-latest-posts .home-display-post .post-thumbnail img {
+        max-height: 240px;
+        width: 100%; }
+
 /*--------------------------------------------------------------
 # Journal Home Page
 --------------------------------------------------------------*/
