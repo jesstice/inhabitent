@@ -20,7 +20,7 @@
 				</div><!-- .site-branding -->
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<a href="#">
+					<a href="<?php echo get_home_url(); ?>">
 						<div class="nav-menu-logo"></div>
 					</a>
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
