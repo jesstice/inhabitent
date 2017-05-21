@@ -1,9 +1,4 @@
 <?php
-/**
- * The header for our theme.
- *
- * @package RED_Starter_Theme
- */
 
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -26,6 +21,9 @@
 				</div><!-- .site-branding -->
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
+					<a href="#">
+						<div class="nav-menu-logo"></div>
+					</a>
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav><!-- #site-navigation -->

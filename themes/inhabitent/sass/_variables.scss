@@ -19,9 +19,13 @@ $color__link: royalblue;
 $color__link-visited: purple;
 $color__link-hover: midnightblue;
 
+$color__green-brand: #248A83;
+$color__purple-brand: #2f1339;
+
 // Typography
 
-$font__main: sans-serif;
+$font__main: "Merriweather", serif;
+$font__accent: "Novecento", san-serif;
 $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.5;

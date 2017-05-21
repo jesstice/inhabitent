@@ -32,6 +32,36 @@
 	margin: 0 0 $base__space-unit;
 }
 
+// Image Header
+.entry-header {
+	position: relative;
+
+	.wp-post-image {
+			width: 100%;
+		}
+
+	.entry-title {
+		width: 80%;
+		padding: 0.75rem 2rem 0.75rem 1rem;
+		position: absolute;
+    top: 2rem;
+		background-color: #248A83;
+
+		h2, a {
+			margin: 0;
+			color: #fff;
+			font-family: $font__accent;
+			font-size: 2.25rem;
+			line-height: normal;
+			text-decoration: none;
+			text-transform: uppercase;
+		}
+
+	
+	}
+
+}
+
 /* Asides */
 
 .blog .format-aside .entry-title,

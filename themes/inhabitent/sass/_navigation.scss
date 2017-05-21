@@ -27,10 +27,38 @@ a {
 /* Menus */
 
 .main-navigation {
-	clear: both;
-	display: block;
-	float: left;
+	// clear: both;
+	// float: left;
+	height: 3rem;
 	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-family: $font__accent;
+	text-transform: uppercase;
+
+	.nav-menu-logo {
+		height: 2rem;
+		width: 4rem;
+		background-image: url('../../images/inhabitent-logo-tent.svg');
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+
+	#primary-menu {
+		display: flex;
+    width: 20rem;
+    justify-content: space-around;
+	}
+
+	a {
+		color: $color__green-brand;
+	}
+
+	.menu-main-menu-container {
+		display: flex;
+		align-items: center;
+	}
 
 	ul {
 		display: none;
@@ -40,7 +68,7 @@ a {
 
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-			float: left;
+			// float: left;
 			position: absolute;
 			top: $base__space-unit;
 			left: -999rem;
@@ -77,7 +105,7 @@ a {
 		}
 	}
 	li {
-		float: left;
+		// float: left;
 		position: relative;
 
 		&:hover > a,
