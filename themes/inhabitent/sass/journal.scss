@@ -1,0 +1,54 @@
+/*--------------------------------------------------------------
+# Journal Home Page
+--------------------------------------------------------------*/
+
+.blog {
+	.site-content {
+		width: 100%;
+		display: flex;
+
+    .site-main {
+      padding-right: 4rem;
+    }
+
+    #primary {
+      flex-basis: 67%;
+    }
+
+		#secondary {
+			flex-basis: 33%;
+			padding-left: 4rem;
+
+			h2 {
+				margin: 0;
+        font-family: $font__accent;
+				text-transform: uppercase;
+			}
+		}
+
+	}
+}
+
+.sidebar-contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 6%;
+
+  .contact-info-text {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    p {
+      margin: 0;
+    }
+
+    .fa {
+      padding-right: 1.5rem;
+    }
+
+  }
+
+}
