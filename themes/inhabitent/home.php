@@ -24,7 +24,9 @@ get_header(); ?>
 
         <div class="entry-content">
           <?php the_excerpt(); ?>
-        </div><!-- .entry-content -->
+        </div>
+        <a class="post-read-more" href="<?php the_permalink() ?>">Read More &#8594;</a>
+        <!-- .entry-content -->
       </article><!-- #post-## -->
 
 

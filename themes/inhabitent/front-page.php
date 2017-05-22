@@ -6,7 +6,13 @@ get_header(); ?>
   <img src="<?php echo get_stylesheet_directory_uri() ?>/images/inhabitent-logo-full.svg" alt="inhabitent logo">
 </div>
 
-<!--Add 3 latest blog posts-->
+<!--Shop Products Section-->
+<div>
+  <h2>Shop</h2>
+  <p>To be added....</p>
+</div>
+
+<!--Display 3 latest blog posts-->
 <div class="home-journal-display">
   <h2>Inhabitent Journal</h2>
   <ul class="home-latest-posts">
@@ -32,6 +38,12 @@ get_header(); ?>
       wp_reset_postdata();
     ?>
   </ul>
+</div>
+
+<!--Adventures Section-->
+<div>
+  <h2>Latest Adventures</h2>
+  <p>To be added....</p>
 </div>
 
 <?php get_footer(); ?>

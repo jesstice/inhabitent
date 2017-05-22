@@ -14,26 +14,25 @@
   background-repeat: no-repeat;
 }
 
-.home-journal-display {
-  @include side-padding;
-
-    h2, h3, .post-read-more {
+ .home h2 {
     font-family: $font__accent;
-    text-transform: uppercase;
-  }
-
-  h2 {
     font-size: 2.25rem;
     font-weight: normal;
     text-align: center;
+    text-transform: uppercase;    
   }
+
+.home-journal-display {
+  @include side-padding;
 
   h3 {
     margin-top: 0;
     color: $color__green-brand;
+    font-family: $font__accent;
     font-size: 1.3rem;
     letter-spacing: .1rem;
     line-height: normal;
+    text-transform: uppercase;
   }
 
   h3:hover {
@@ -41,22 +40,6 @@
     transition: all 0.1s;
   }
 
-  .post-read-more {
-    margin: 0;
-    width: 9rem;
-    padding: 0.5rem;
-    background-color: #FFF;
-    border: 1px solid #000;
-    color: #000;
-    text-align: center;
-
-    &:hover {
-      background-color: $color__green-brand;
-      color: #FFF;
-      transition: all 0.1s;
-    }
-
-  }
 }
 
 .home-latest-posts {
@@ -96,7 +79,57 @@
       flex-direction: column;
       justify-content: center;
     }
+  }
+}
 
+// CSS also applied to Journal home page
+a.post-read-more {
+  margin: 0;
+  width: 9rem;
+  padding: 0.5rem 1rem;
+  background-color: #FFF;
+  border: 1px solid #000;
+  color: #000;
+  font-family: $font__accent;
+  font-size: 0.9rem;
+  text-align: center;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: $color__green-brand;
+    color: #FFF;
+    transition: all 0.1s;
   }
 
+}
+
+/* Journal Home Page */
+
+.blog {
+	.site-content {
+		width: 100%;
+    @include side-padding;
+  	display: flex;
+
+    .site-main {
+      padding-top: 3rem;
+      padding-right: 4rem;
+    }
+
+    #primary {
+      flex-basis: 73%;
+    }
+
+		#secondary {
+			flex-basis: 27%;
+			padding-left: 4rem;
+
+			h2 {
+				margin: 0;
+        font-family: $font__accent;
+				text-transform: uppercase;
+			}
+		}
+
+	}
 }

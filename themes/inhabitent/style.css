@@ -284,6 +284,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Copy */
 a {
+  color: #248A83;
   text-decoration: none; }
 
 p {
@@ -455,17 +456,23 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: #248A83; }
   a:visited {
-    color: purple; }
+    color: #248A83; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #2f1339; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
     outline: 0; }
 
 /* Menus */
+.site-header {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(161, 161, 161, 0.5); }
+
 .main-navigation {
   height: 3rem;
   width: 100%;
@@ -491,8 +498,6 @@ a {
     width: 20rem;
     -ms-flex-pack: distribute;
         justify-content: space-around; }
-  .main-navigation a {
-    color: #248A83; }
   .main-navigation .menu-main-menu-container {
     display: -ms-flexbox;
     display: flex;
@@ -766,37 +771,27 @@ object {
   background-size: cover;
   background-repeat: no-repeat; }
 
+.home h2 {
+  font-family: "Novecento", san-serif;
+  font-size: 2.25rem;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase; }
+
 .home-journal-display {
   padding-left: 5rem;
   padding-right: 5rem; }
-  .home-journal-display h2, .home-journal-display h3, .home-journal-display .post-read-more {
-    font-family: "Novecento", san-serif;
-    text-transform: uppercase; }
-  .home-journal-display h2 {
-    font-size: 2.25rem;
-    font-weight: normal;
-    text-align: center; }
   .home-journal-display h3 {
     margin-top: 0;
     color: #248A83;
+    font-family: "Novecento", san-serif;
     font-size: 1.3rem;
     letter-spacing: .1rem;
-    line-height: normal; }
+    line-height: normal;
+    text-transform: uppercase; }
   .home-journal-display h3:hover {
     color: #000;
     transition: all 0.1s; }
-  .home-journal-display .post-read-more {
-    margin: 0;
-    width: 9rem;
-    padding: 0.5rem;
-    background-color: #FFF;
-    border: 1px solid #000;
-    color: #000;
-    text-align: center; }
-    .home-journal-display .post-read-more:hover {
-      background-color: #248A83;
-      color: #FFF;
-      transition: all 0.1s; }
 
 .home-latest-posts {
   height: 25rem;
@@ -834,9 +829,23 @@ object {
       -ms-flex-pack: center;
           justify-content: center; }
 
-/*--------------------------------------------------------------
-# Journal Home Page
---------------------------------------------------------------*/
+a.post-read-more {
+  margin: 0;
+  width: 9rem;
+  padding: 0.5rem 1rem;
+  background-color: #FFF;
+  border: 1px solid #000;
+  color: #000;
+  font-family: "Novecento", san-serif;
+  font-size: 0.9rem;
+  text-align: center;
+  text-transform: uppercase; }
+  a.post-read-more:hover {
+    background-color: #248A83;
+    color: #FFF;
+    transition: all 0.1s; }
+
+/* Journal Home Page */
 .blog .site-content {
   width: 100%;
   padding-left: 5rem;
@@ -857,6 +866,12 @@ object {
       margin: 0;
       font-family: "Novecento", san-serif;
       text-transform: uppercase; }
+
+/*--------------------------------------------------------------
+# Sidebar
+--------------------------------------------------------------*/
+.widget-area {
+  border-left: 1px solid rgba(161, 161, 161, 0.5); }
 
 .sidebar-contact-info {
   margin-top: 5rem;
