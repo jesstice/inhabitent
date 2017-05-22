@@ -756,10 +756,15 @@ object {
 /* Front page */
 .home-banner {
   height: 100vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
   background-image: url("../../images/home-hero.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
-  text-align: center; }
+  background-repeat: no-repeat; }
 
 .home-journal-display {
   padding-left: 5rem;
@@ -772,9 +777,14 @@ object {
     font-weight: normal;
     text-align: center; }
   .home-journal-display h3 {
-    font-size: 1.25rem;
+    margin-top: 0;
+    color: #248A83;
+    font-size: 1.3rem;
     letter-spacing: .1rem;
     line-height: normal; }
+  .home-journal-display h3:hover {
+    color: #000;
+    transition: all 0.1s; }
   .home-journal-display .post-read-more {
     margin: 0;
     width: 9rem;
@@ -789,7 +799,9 @@ object {
       transition: all 0.1s; }
 
 .home-latest-posts {
+  height: 25rem;
   margin: 0;
+  margin-bottom: 2rem;
   padding: 0;
   display: -ms-flexbox;
   display: flex;
@@ -808,10 +820,19 @@ object {
     -ms-flex-direction: column;
         flex-direction: column; }
     .home-latest-posts .home-display-post .post-thumbnail {
-      height: 59%; }
+      max-height: 240px;
+      overflow: hidden; }
       .home-latest-posts .home-display-post .post-thumbnail img {
-        max-height: 240px;
+        height: auto;
         width: 100%; }
+    .home-latest-posts .home-display-post .post-display-data {
+      height: 40%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 /*--------------------------------------------------------------
 # Journal Home Page

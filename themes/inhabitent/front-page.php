@@ -18,7 +18,7 @@ get_header(); ?>
           <?php the_post_thumbnail( 'medium' ); ?>
         <?php endif; ?>
       </div>
-      <div>
+      <div class="post-display-data">
         <?php if ( 'post' === get_post_type() ) : ?>
           <p class="post-meta-data"><?php the_time('j F Y'); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?></p>
         <?php endif; ?>

@@ -6,10 +6,12 @@
 
 .home-banner {
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-image: url('../../images/home-hero.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  text-align: center;
 }
 
 .home-journal-display {
@@ -27,9 +29,16 @@
   }
 
   h3 {
-    font-size: 1.25rem;
+    margin-top: 0;
+    color: $color__green-brand;
+    font-size: 1.3rem;
     letter-spacing: .1rem;
     line-height: normal;
+  }
+
+  h3:hover {
+    color: #000;
+    transition: all 0.1s;
   }
 
   .post-read-more {
@@ -48,11 +57,12 @@
     }
 
   }
-
 }
 
 .home-latest-posts {
+  height: 25rem;
   margin: 0;
+  margin-bottom: 2rem;
   padding: 0;
   display: flex;
   flex-direction: row;
@@ -64,19 +74,27 @@
     font-size: 0.75rem;
   }
 
+// single post
   .home-display-post {
     width: 32%;
     display: flex;
     flex-direction: column;
 
     .post-thumbnail {
-      height: 59%;
+      max-height: 240px;
+      overflow: hidden;
 
       img {
-        max-height: 240px;
+        height: auto;
         width: 100%;
       }
+    }
 
+    .post-display-data {
+      height: 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
   }
