@@ -2,6 +2,10 @@
 
 get_header(); ?>
 
+<div class="home-banner">
+  <img src="<?php echo get_stylesheet_directory_uri() ?>/images/inhabitent-logo-full.svg" alt="inhabitent logo">
+</div>
+
 <!--Add 3 latest blog posts-->
 <div class="home-journal-display">
   <h2>Inhabitent Journal</h2>

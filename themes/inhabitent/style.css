@@ -754,6 +754,13 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.home-banner {
+  height: 100vh;
+  background-image: url("../../images/home-hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center; }
+
 .home-journal-display {
   padding-left: 5rem;
   padding-right: 5rem; }

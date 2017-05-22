@@ -4,6 +4,14 @@
 
 /* Front page */
 
+.home-banner {
+  height: 100vh;
+  background-image: url('../../images/home-hero.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
 .home-journal-display {
   @include side-padding;
 
