@@ -26,6 +26,29 @@
     text-align: center;
   }
 
+  h3 {
+    font-size: 1.25rem;
+    letter-spacing: .1rem;
+    line-height: normal;
+  }
+
+  .post-read-more {
+    margin: 0;
+    width: 9rem;
+    padding: 0.5rem;
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #000;
+    text-align: center;
+
+    &:hover {
+      background-color: $color__green-brand;
+      color: #FFF;
+      transition: all 0.1s;
+    }
+
+  }
+
 }
 
 .home-latest-posts {

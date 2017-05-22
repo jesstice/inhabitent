@@ -20,11 +20,11 @@ get_header(); ?>
       </div>
       <div>
         <?php if ( 'post' === get_post_type() ) : ?>
-          <p class="post-meta-data"><?php the_time('j F Y'); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?></p>
+          <p class="post-meta-data"><?php the_time('j F Y'); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?></p>
         <?php endif; ?>
         
         <a href="<?php the_permalink() ?>"><h3><?php the_title(); ?></h3></a>
-        <a href="<?php the_permalink() ?>"><p class="post-read-more">Read More</p></a>
+        <a class="post-read-more" href="<?php the_permalink() ?>">Read Entry</a>
       </div>
     </li>
     <?php
