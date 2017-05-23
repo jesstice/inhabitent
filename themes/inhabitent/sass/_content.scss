@@ -36,6 +36,41 @@
 	margin: 0 0 $base__space-unit;
 }
 
+// Single post
+
+.single-post {
+	.site-content {
+		width: 100%;
+		@include side-padding;
+		display: flex;
+	}
+
+	.content-area {
+		padding-top: 3rem;
+		padding-right: 4rem;
+	}
+
+	.post {
+		margin: 4rem 0 1.5rem;
+	}
+
+	#primary {
+		flex-basis: 73%;
+	}
+
+	#secondary {
+		flex-basis: 27%;
+		padding-left: 4rem;
+
+		h2 {
+			margin: 0;
+			font-family: $font__accent;
+			text-transform: uppercase;
+		}
+	}
+
+}
+
 // Image Header
 .blog, .single-post {
 	.entry-header {

@@ -4,6 +4,11 @@
 
 .widget-area {
   border-left: 1px solid $color__grey-border;
+
+  aside {
+    margin-top: 4rem;
+  }
+
 }
 
 .sidebar-contact-info {
@@ -27,4 +32,15 @@
     .fa {
       padding-right: 1.5rem;
     }
+}
+
+// archives
+
+.sidebar-archives {
+
+  .archives-list {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+  }
 }

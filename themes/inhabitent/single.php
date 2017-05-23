@@ -12,17 +12,42 @@ get_header(); ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php get_template_part( 'template-parts/content', 'single' ); ?>
+			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+        <header class="entry-header">
+          <?php if ( has_post_thumbnail() ) : ?>
+            <?php the_post_thumbnail( 'large' ); ?>
+          <?php endif; ?>
 
-			<?php the_post_navigation(); ?>
+          <?php the_title( sprintf( '<div class="entry-title"><h2><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2></div>' ); ?>
 
-			<?php
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-			?>
+          <?php if ( 'post' === get_post_type() ) : ?>
+          <div class="entry-meta">
+           <?php the_time('j F Y'); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?>
+          </div><!-- .entry-meta -->
+          <?php endif; ?>
+        </header><!-- .entry-header -->
 
+        <div class="entry-content">
+          <?php the_content(); ?>
+					<?php
+						wp_link_pages( array(
+							'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
+							'after'  => '</div>',
+						) );
+					?>
+        </div>
+
+				<footer class="entry-footer">
+					<?php red_starter_entry_footer(); ?>
+				</footer><!-- .entry-footer -->
+
+				<?php
+					// If comments are open or we have at least one comment, load up the comment template.
+					if ( comments_open() || get_comments_number() ) :
+						comments_template();
+					endif;
+				?>
+		</article>
 		<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->

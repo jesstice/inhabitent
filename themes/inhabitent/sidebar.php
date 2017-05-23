@@ -29,4 +29,11 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 			Vancouver, BC V6H 1H5</p>
 		</div>
 	</aside>
+
+	<aside class="sidebar-archives">
+		<h2>Archives</h2>
+    <ul class="archives-list">
+			<?php wp_get_archives('type=monthly'); ?>
+    </ul>
+	</aside>
 </div><!-- #secondary -->

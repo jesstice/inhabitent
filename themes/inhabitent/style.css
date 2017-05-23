@@ -660,6 +660,33 @@ a {
   clear: both;
   margin: 0 0 1.5rem; }
 
+.single-post .site-content {
+  width: 100%;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  display: -ms-flexbox;
+  display: flex; }
+
+.single-post .content-area {
+  padding-top: 3rem;
+  padding-right: 4rem; }
+
+.single-post .post {
+  margin: 4rem 0 1.5rem; }
+
+.single-post #primary {
+  -ms-flex-preferred-size: 73%;
+      flex-basis: 73%; }
+
+.single-post #secondary {
+  -ms-flex-preferred-size: 27%;
+      flex-basis: 27%;
+  padding-left: 4rem; }
+  .single-post #secondary h2 {
+    margin: 0;
+    font-family: "Novecento", san-serif;
+    text-transform: uppercase; }
+
 .blog .entry-header, .single-post .entry-header {
   position: relative;
   color: #fff;
@@ -880,6 +907,8 @@ a.post-read-more {
 --------------------------------------------------------------*/
 .widget-area {
   border-left: 1px solid rgba(161, 161, 161, 0.5); }
+  .widget-area aside {
+    margin-top: 4rem; }
 
 .sidebar-contact-info {
   margin-top: 5rem;
@@ -904,6 +933,11 @@ a.post-read-more {
     margin: 0; }
   .contact-info-text .fa {
     padding-right: 1.5rem; }
+
+.sidebar-archives .archives-list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none; }
 
 /*--------------------------------------------------------------
 # Footer
