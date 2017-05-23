@@ -35,4 +35,3 @@
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
 
-<?php get_sidebar(); ?>

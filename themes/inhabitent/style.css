@@ -283,6 +283,9 @@ h1, h2, h3, h4, h5, h6 {
   clear: both; }
 
 /* Copy */
+h1.page-title {
+  display: none; }
+
 a {
   color: #248A83;
   text-decoration: none; }
@@ -914,6 +917,10 @@ a.post-read-more {
       margin: 0;
       font-family: "Novecento", san-serif;
       text-transform: uppercase; }
+
+/* About page */
+.page-id-25 .entry-title {
+  display: none; }
 
 /*--------------------------------------------------------------
 # Sidebar
