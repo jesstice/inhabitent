@@ -33,11 +33,12 @@
     letter-spacing: .1rem;
     line-height: normal;
     text-transform: uppercase;
-  }
 
-  h3:hover {
+    &:hover {
     color: #000;
     transition: all 0.1s;
+    }
+
   }
 
 }
@@ -97,6 +98,7 @@ a.post-read-more {
 
   &:hover {
     background-color: $color__green-brand;
+    border: 1px solid $color__green-brand;
     color: #FFF;
     transition: all 0.1s;
   }
