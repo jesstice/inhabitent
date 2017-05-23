@@ -29,8 +29,9 @@ a {
 .site-header {
 	position: fixed;
   width: 100%;
-	background-color: rgba(255, 255, 255, 0.5);
+	background-color: rgba(255, 255, 255, 0.6);
 	border-bottom: 1px solid $color__grey-border;
+	z-index: 999;
 }
 
 .main-navigation {

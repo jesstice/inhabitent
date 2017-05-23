@@ -103,3 +103,8 @@ require get_template_directory() . '/inc/template-tags.php';
  */
 require get_template_directory() . '/inc/extras.php';
 
+// Decrease excerpt length
+function decrease_excerpt_length( $length ) {
+    return 50;
+}
+add_filter( 'excerpt_length', 'decrease_excerpt_length');

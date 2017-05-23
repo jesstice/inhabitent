@@ -470,8 +470,9 @@ a {
 .site-header {
   position: fixed;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.5);
-  border-bottom: 1px solid rgba(161, 161, 161, 0.5); }
+  background-color: rgba(255, 255, 255, 0.6);
+  border-bottom: 1px solid rgba(161, 161, 161, 0.5);
+  z-index: 999; }
 
 .main-navigation {
   height: 3rem;
@@ -651,6 +652,9 @@ a {
 .entry-content,
 .entry-summary {
   margin: 1.5rem 0 0; }
+
+.entry-content {
+  line-height: 1.75; }
 
 .page-links {
   clear: both;
@@ -844,6 +848,8 @@ a.post-read-more {
     background-color: #248A83;
     color: #FFF;
     transition: all 0.1s; }
+  .blog a.post-read-more {
+    padding: 0.75rem 1.5rem; }
 
 /* Journal Home Page */
 .blog .site-content {
@@ -855,6 +861,8 @@ a.post-read-more {
   .blog .site-content .site-main {
     padding-top: 3rem;
     padding-right: 4rem; }
+  .blog .site-content .post {
+    margin: 4rem 0 1.5rem; }
   .blog .site-content #primary {
     -ms-flex-preferred-size: 73%;
         flex-basis: 73%; }

@@ -101,6 +101,10 @@ a.post-read-more {
     transition: all 0.1s;
   }
 
+  .blog & {
+    padding: 0.75rem 1.5rem;
+  }
+
 }
 
 /* Journal Home Page */
@@ -114,6 +118,10 @@ a.post-read-more {
     .site-main {
       padding-top: 3rem;
       padding-right: 4rem;
+    }
+
+    .post {
+      margin: 4rem 0 1.5rem;
     }
 
     #primary {
