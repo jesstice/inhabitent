@@ -21,8 +21,21 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Copy */
 
-h1.page-title {
-	display: none;
+h1, h2, h3 {
+	font-family: $font__accent;
+	text-transform: uppercase;
+}
+
+h1 {
+	font-size: 3rem;
+
+	&.page-title {
+		display: none;	
+	}
+}
+
+h2 {
+	font-size: 2rem;
 }
 
 a {

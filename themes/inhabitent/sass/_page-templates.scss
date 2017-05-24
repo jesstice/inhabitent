@@ -14,13 +14,11 @@
   background-repeat: no-repeat;
 }
 
- .home h2 {
-    font-family: $font__accent;
-    font-size: 2.25rem;
-    font-weight: normal;
-    text-align: center;
-    text-transform: uppercase;    
-  }
+.home h2 {
+  font-size: 2.25rem;
+  font-weight: normal;
+  text-align: center;
+}
 
 .home-journal-display {
   @include side-padding;
@@ -28,11 +26,9 @@
   h3 {
     margin-top: 0;
     color: $color__green-brand;
-    font-family: $font__accent;
     font-size: 1.3rem;
     letter-spacing: .1rem;
     line-height: normal;
-    text-transform: uppercase;
 
     &:hover {
     color: #000;
@@ -136,8 +132,6 @@ a.post-read-more {
 
 			h2 {
 				margin: 0;
-        font-family: $font__accent;
-				text-transform: uppercase;
 			}
 		}
 
@@ -145,6 +139,32 @@ a.post-read-more {
 }
 
 /* About page */
-.page-id-25 .entry-title {
-  display: none;
+.page-id-25 {
+  h1 {
+    margin: 0;
+  }
+}
+
+.about-hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;  
+  justify-content: center;
+  color: #FFF;
+  background: center / cover no-repeat;
+  // background-size: cover;
+  // background-position: center;
+  // background-repeat: no-repeat;
+}
+
+.about-content {
+  padding: 2.5rem 14rem;
+
+  h2 {
+    margin-top: 0;
+    color: $color__purple-brand;
+    letter-spacing: 0.15rem;
+    text-align: center;
+  }
+
 }
