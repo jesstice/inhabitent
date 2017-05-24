@@ -761,6 +761,25 @@ a {
 .bypostauthor {
   display: block; }
 
+/* Social Media Icons */
+.social-media-icons {
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  background-color: #FFF;
+  border: 1px solid #000;
+  color: #000;
+  font-family: "Novecento", san-serif;
+  font-size: 0.9rem;
+  text-align: center;
+  text-transform: uppercase; }
+  .social-media-icons:hover {
+    background-color: #248A83;
+    border: 1px solid #248A83;
+    color: #FFF;
+    transition: all 0.1s; }
+  .social-media-icons p {
+    margin: 0; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
