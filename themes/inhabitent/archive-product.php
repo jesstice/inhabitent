@@ -14,10 +14,20 @@ get_header(); ?>
 
 			<header class="page-header">
 				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
+					// the_archive_title( '<h1 class="page-title">', '</h1>' );
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
+
+			<section class="shop-header">
+				<h1>Shop</h1>
+				<div class="products-categories">
+					<a href="#">Do</a>
+					<a href="#">Eat</a>
+					<a href="#">Sleep</a>
+					<a href="#">Wear</a>
+				</div>
+			</section>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
