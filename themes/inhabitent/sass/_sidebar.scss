@@ -3,6 +3,7 @@
 --------------------------------------------------------------*/
 
 .widget-area {
+  padding-top: 3rem;
   border-left: 1px solid $color__grey-border;
 
   aside {
@@ -10,6 +11,7 @@
   }
 
   h2 {
+    color: $color__purple-brand;
     font-size: 1.5rem;
     letter-spacing: 0.15rem;
   }
@@ -17,8 +19,7 @@
 }
 
 .sidebar-contact-info {
-  margin-top: 5rem;
-  height: 5%;
+  height: 12rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -35,18 +36,18 @@
     }
 
     .fa {
-      height: 100%;
       padding-right: 1.5rem;
     }
 
-    .fa-map-marker {
-      align-self: flex-start;
-    }
 }
 
 // archives
 
 .sidebar-archives {
+
+  h2 {
+    padding-bottom: 1rem;
+  }
 
   .archives-list {
     margin: 0;

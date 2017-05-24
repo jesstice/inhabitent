@@ -691,6 +691,11 @@ a {
   -ms-flex-preferred-size: 73%;
       flex-basis: 73%; }
 
+.single-post h1.entry-title {
+  margin: 0;
+  font-size: 2.25rem;
+  line-height: normal; }
+
 .single-post #secondary {
   -ms-flex-preferred-size: 27%;
       flex-basis: 27%;
@@ -744,6 +749,12 @@ a {
   display: none; }
 
 /* Comments */
+.comments-link a, .comments-link a:visited {
+  color: #FFF; }
+
+.comments-link a:hover {
+  color: #f0e4d1; }
+
 .comment-content a {
   word-wrap: break-word; }
 
@@ -948,16 +959,17 @@ a.post-read-more {
 # Sidebar
 --------------------------------------------------------------*/
 .widget-area {
+  padding-top: 3rem;
   border-left: 1px solid rgba(161, 161, 161, 0.5); }
   .widget-area aside {
     margin-top: 4rem; }
   .widget-area h2 {
+    color: #2f1339;
     font-size: 1.5rem;
     letter-spacing: 0.15rem; }
 
 .sidebar-contact-info {
-  margin-top: 5rem;
-  height: 5%;
+  height: 12rem;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -977,11 +989,10 @@ a.post-read-more {
   .contact-info-text p {
     margin: 0; }
   .contact-info-text .fa {
-    height: 100%;
     padding-right: 1.5rem; }
-  .contact-info-text .fa-map-marker {
-    -ms-flex-item-align: start;
-        align-self: flex-start; }
+
+.sidebar-archives h2 {
+  padding-bottom: 1rem; }
 
 .sidebar-archives .archives-list {
   margin: 0;

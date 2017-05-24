@@ -17,7 +17,7 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 		<h2>Contact Info</h2>
 		<div class="contact-info-text">
 			<i class="fa fa-fw fa-phone" aria-hidden="true"></i>
-			<p class="contact-info-paragraph">778-456-7891</p>
+			<p class="contact-info-paragraph"><a href="tel:778-456-7891">778-456-7891</a></p>
 		</div>
 		<div class="contact-info-text">
 			<i class="fa fa-fw fa-envelope" aria-hidden="true"></i>

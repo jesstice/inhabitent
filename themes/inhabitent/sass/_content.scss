@@ -58,6 +58,12 @@
 		flex-basis: 73%;
 	}
 
+	h1.entry-title {
+		margin: 0;
+		font-size: 2.25rem;
+		line-height: normal;
+	}
+
 	#secondary {
 		flex-basis: 27%;
 		padding-left: 4rem;
@@ -137,6 +143,17 @@
 }
 
 /* Comments */
+
+.comments-link {
+	a, a:visited {
+		color: #FFF;	
+	}
+
+	a:hover {
+		color: $color__yellow-brand;
+	}
+
+}
 
 .comment-content a {
 	word-wrap: break-word;
