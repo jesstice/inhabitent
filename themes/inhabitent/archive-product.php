@@ -2,7 +2,7 @@
 /**
  * The template for displaying product archive pages.
  *
- * @package RED_Starter_Theme
+ * @package inhabitent_Theme
  */
 
 get_header(); ?>
