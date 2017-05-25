@@ -289,8 +289,6 @@ h1, h2, h3 {
 
 h1 {
   font-size: 3rem; }
-  h1.page-title {
-    display: none; }
 
 h2 {
   font-size: 2rem; }
@@ -895,12 +893,10 @@ object {
     display: flex;
     -ms-flex-direction: column;
         flex-direction: column; }
-    .home-latest-posts .home-display-post .post-thumbnail {
+    .home-latest-posts .home-display-post .wp-post-image {
       max-height: 240px;
-      overflow: hidden; }
-      .home-latest-posts .home-display-post .post-thumbnail img {
-        height: auto;
-        width: 100%; }
+      overflow: hidden;
+      width: 100%; }
     .home-latest-posts .home-display-post .post-display-data {
       height: 40%;
       display: -ms-flexbox;
