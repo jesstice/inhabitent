@@ -2,7 +2,7 @@
 /**
  * Custom functions that act independently of the theme templates.
  *
- * @package RED_Starter_Theme
+ * @package Inhabitent_Theme
  */
 
 /**
@@ -11,7 +11,7 @@
  * @param array $classes Classes for the body element.
  * @return array
  */
-function red_starter_body_classes( $classes ) {
+function inhabitent_body_classes( $classes ) {
 	// Adds a class of group-blog to blogs with more than 1 published author.
 	if ( is_multi_author() ) {
 		$classes[] = 'group-blog';
@@ -19,7 +19,7 @@ function red_starter_body_classes( $classes ) {
 
 	return $classes;
 }
-add_filter( 'body_class', 'red_starter_body_classes' );
+add_filter( 'body_class', 'inhabitent_body_classes' );
 
 // Remove "Editor" links from sub-menus
 function inhabitent_remove_submenus() {
@@ -54,7 +54,7 @@ function inhabitent_login_title() {
 add_filter( 'login_headertitle', 'inhabitent_login_title' );
 
 // Add css to About Hero
-function add_about_css() {
+function inhabitent_add_about_css() {
 	if ( !is_page_template('about.php') ) {
 		return;
 	} else {
@@ -63,7 +63,7 @@ function add_about_css() {
 	}
 	wp_add_inline_style( 'inhabitent-style', $css );
 }
-add_action( 'wp_enqueue_scripts', 'add_about_css' );
+add_action( 'wp_enqueue_scripts', 'inhabitent_add_about_css' );
 
 
 // Add the title to the Shop page
@@ -75,14 +75,17 @@ add_filter( 'get_the_archive_title', function ( $title ) {
 });
 
 // Change order and number of archive posts
-add_action( 'pre_get_posts', 'change_archive_posts');
+add_action( 'pre_get_posts', 'inhabitent_change_archive_posts');
 
-function change_archive_posts($query) {
-	if ( is_post_type_archive( 'product' ) ) {
+function inhabitent_change_archive_posts($query) {
+	if ( 
+		(is_post_type_archive( array('product') ) || $query->is_tax( 'product-type' )) 
+		&& !is_admin()
+		&& $query->is_main_query() 
+	){
     $query->set( 'posts_per_page', 16 );
 		$query->set( 'orderby', 'title' );
     $query->set( 'order', 'ASC' );
-    return;
   }
 }
 
@@ -92,7 +95,7 @@ function change_archive_posts($query) {
  * @param  string The raw post content.
  * @return string
  */
-function red_wp_trim_excerpt( $text ) {
+function inhabitent_wp_trim_excerpt( $text ) {
 	$raw_excerpt = $text;
 	
 	if ( '' == $text ) {
@@ -129,8 +132,8 @@ function red_wp_trim_excerpt( $text ) {
 		}
 	}
 	
-	return apply_filters( 'wp_trim_excerpt', $text, $raw_excerpt );
+	return apply_filters( 'inhabitent_trim_excerpt', $text, $raw_excerpt );
 }
 
 remove_filter( 'get_the_excerpt', 'wp_trim_excerpt' );
-add_filter( 'get_the_excerpt', 'red_wp_trim_excerpt' );
+add_filter( 'get_the_excerpt', 'inhabitent_wp_trim_excerpt' );

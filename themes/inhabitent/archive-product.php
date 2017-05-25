@@ -20,7 +20,7 @@ get_header(); ?>
 				<?php
 					$product_types = get_terms(array (
 						'taxonomy'  => 'product-type',
-						'hide_empty'=> 0
+						'hide_empty'=> false
 						));
 
     			if (!empty($product_types) && !is_wp_error($product_types)):
@@ -38,9 +38,9 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<?php if ( has_post_thumbnail() ) : ?>
-						<?php the_post_thumbnail( 'medium' ); ?>
+						<a href="<?php get_permalink() ?>" rel="bookmark"><?php the_post_thumbnail( 'medium' ); ?></a>
 					<?php endif; ?>
-					<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+					<?php the_title( sprintf( '<p class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></p>' ); ?>
         	<?php echo get_post_meta($post->ID, 'price', true); ?>
 				</article>
 			<?php endwhile; ?>

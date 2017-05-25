@@ -1007,7 +1007,7 @@ object {
   -ms-flex-preferred-size: 23%;
       flex-basis: 23%; }
 
-.post-type-archive-product article h2 {
+.post-type-archive-product article p {
   display: inline-block; }
 
 /*--------------------------------------------------------------

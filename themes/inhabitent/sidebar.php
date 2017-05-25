@@ -11,7 +11,7 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 ?>
 
 <div id="secondary" class="widget-area" role="complementary">
-	<!--<?php dynamic_sidebar( 'sidebar-1' ); ?>-->
+	<?php dynamic_sidebar( 'sidebar-1' ); ?>
 
 	<aside class="sidebar-contact-info">
 		<h2>Contact Info</h2>
@@ -30,10 +30,10 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 		</div>
 	</aside>
 
-	<aside class="sidebar-archives">
+	<!--<aside class="sidebar-archives">
 		<h2>Archives</h2>
     <ul class="archives-list">
 			<?php wp_get_archives('type=monthly'); ?>
     </ul>
-	</aside>
+	</aside>-->
 </div><!-- #secondary -->
