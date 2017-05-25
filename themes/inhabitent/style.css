@@ -906,7 +906,7 @@ object {
       -ms-flex-pack: center;
           justify-content: center; }
 
-a.post-read-more {
+.post-read-more {
   margin: 0;
   width: 9rem;
   padding: 0.5rem 1rem;
@@ -917,12 +917,12 @@ a.post-read-more {
   font-size: 0.9rem;
   text-align: center;
   text-transform: uppercase; }
-  a.post-read-more:hover {
+  .post-read-more:hover {
     background-color: #248A83;
     border: 1px solid #248A83;
     color: #FFF;
     transition: all 0.1s; }
-  .blog a.post-read-more {
+  .blog .post-read-more {
     padding: 0.75rem 1.5rem; }
 
 /* Journal Home Page */
@@ -1007,8 +1007,8 @@ a.post-read-more {
   -ms-flex-preferred-size: 23%;
       flex-basis: 23%; }
 
-.post-type-archive-product .entry-content {
-  display: none; }
+.post-type-archive-product article h2 {
+  display: inline-block; }
 
 /*--------------------------------------------------------------
 # Sidebar
