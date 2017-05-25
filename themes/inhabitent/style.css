@@ -963,8 +963,7 @@ a.post-read-more {
       align-items: center;
   -ms-flex-pack: center;
       justify-content: center;
-  color: #FFF;
-  background: center / cover no-repeat; }
+  color: #FFF; }
 
 .about-content {
   padding: 2.5rem 14rem; }
@@ -973,6 +972,46 @@ a.post-read-more {
     color: #2f1339;
     letter-spacing: 0.15rem;
     text-align: center; }
+
+/*--------------------------------------------------------------
+# Product Page Templates
+--------------------------------------------------------------*/
+/* Archive Product Page */
+.post-type-archive-product .site-main {
+  padding-left: 5rem;
+  padding-right: 5rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.post-type-archive-product h1 {
+  width: 100%;
+  margin: 3rem 0 0 0;
+  text-align: center; }
+
+.post-type-archive-product .products-categories {
+  width: 100%;
+  margin: 0;
+  padding: 2rem 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: center;
+      justify-content: center;
+  list-style: none; }
+
+.post-type-archive-product .type-product {
+  -ms-flex-preferred-size: 23%;
+      flex-basis: 23%; }
+
+.post-type-archive-product .entry-content {
+  display: none; }
 
 /*--------------------------------------------------------------
 # Sidebar

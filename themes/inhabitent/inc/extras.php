@@ -52,3 +52,42 @@ function inhabitent_login_title() {
 	return 'Inhabitent';
 }
 add_filter( 'login_headertitle', 'inhabitent_login_title' );
+
+// Add css to About Hero
+function add_about_css() {
+	if ( !is_page_template('about.php') ) {
+		return;
+	} else {
+		$hero_image = CFS()->get('banner_image');
+		$css = ".about-hero { background: url('$hero_image') center / cover no-repeat; }";
+	}
+	wp_add_inline_style( 'inhabitent-style', $css );
+}
+add_action( 'wp_enqueue_scripts', 'add_about_css' );
+
+
+// Add the title to the Shop page
+add_filter( 'get_the_archive_title', function ( $title ) {
+    if( is_archive() ) {
+        $title = 'Shop Stuff';
+    }
+    return $title;
+});
+
+// Change order and number of archive posts
+add_action( 'pre_get_posts', 'change_archive_posts');
+
+function change_archive_posts($query) {
+	if ( is_post_type_archive( 'product' ) ) {
+    $query->set( 'posts_per_page', 16 );
+		$query->set( 'orderby', 'title' );
+    $query->set( 'order', 'ASC' );
+    return;
+  }
+}
+
+// Decrease excerpt length
+function decrease_excerpt_length( $length ) {
+    return 50;
+}
+add_filter( 'excerpt_length', 'decrease_excerpt_length');

@@ -8,8 +8,25 @@ get_header(); ?>
 
 <!--Shop Products Section-->
 <div>
-  <h2>Shop</h2>
-  <p>To be added....</p>
+  <h2>Shop Stuff</h2>
+  
+  <?php
+    $product_types = get_terms(array (
+      'taxonomy'  => 'product-type',
+      'hide_empty'=> 0
+      ));
+
+    if (!empty($product_types) && !is_wp_error($product_types)):
+  ?>
+
+  <?php foreach ($product_types as $product_type):?>
+    <?php echo $product_type->description; ?>
+    <a href="<?php echo get_term_link($product_type) ?>">
+      <h3><?php echo $product_type->name; ?> Stuff</h3>
+    </a>
+  <?php endforeach; ?>
+  <?php endif; ?>
+
 </div>
 
 <!--Display 3 latest blog posts-->
