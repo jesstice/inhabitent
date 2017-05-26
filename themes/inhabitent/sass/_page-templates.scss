@@ -21,7 +21,6 @@
 }
 
 .home-journal-display {
-  @include side-padding;
 
   h3 {
     margin-top: 0;
@@ -106,8 +105,7 @@
 
 .blog {
 	.site-content {
-		width: 100%;
-    @include side-padding;
+		@include container;
   	display: flex;
 
     .site-main {
@@ -152,7 +150,7 @@
 }
 
 .about-content {
-  padding: 2.5rem 14rem;
+  padding: 3rem 0;
 
   h2 {
     margin-top: 0;
@@ -161,4 +159,7 @@
     text-align: center;
   }
 
+  p {
+    padding: 0 10rem; 
+  }
 }

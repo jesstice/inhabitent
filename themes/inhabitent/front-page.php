@@ -39,7 +39,7 @@ get_header(); ?>
 
 <!--Display 3 latest blog posts-->
 
-<div class="home-journal-display">
+<section class="home-journal-display container">
   <h2>Inhabitent Journal</h2>
 
   <ul class="home-latest-posts">
@@ -62,9 +62,10 @@ get_header(); ?>
     <?php endforeach; 
     wp_reset_postdata();?>
   </ul>
+</section>
 
 <!--Adventures Section-->
-<div>
+<div class="container">
   <h2>Latest Adventures</h2>
   <p>To be added....</p>
 </div>

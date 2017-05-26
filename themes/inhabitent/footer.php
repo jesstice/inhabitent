@@ -7,10 +7,10 @@
 
 ?>
 
-			</div><!-- #content -->
+		</div><!-- #content -->
 
-			<footer id="colophon" class="site-footer" role="contentinfo">
-
+		<footer id="colophon" class="site-footer" role="contentinfo">
+			<div class="container">
 				<div class="site-info">
 
 					<div class="footer-contact-info">
@@ -45,8 +45,9 @@
 				<div class="footer-copyright">
 					<p>Copyright &copy; 2016 Inhabitent</p>
 				</div>
-
-			</footer><!-- #colophon -->
+			</div>
+		</footer><!-- #colophon -->
+		
 		</div><!-- #page -->
 
 		<?php wp_footer(); ?>

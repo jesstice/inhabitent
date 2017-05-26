@@ -941,18 +941,15 @@ object {
   font-weight: normal;
   text-align: center; }
 
-.home-journal-display {
-  padding-left: 5rem;
-  padding-right: 5rem; }
-  .home-journal-display h3 {
-    margin-top: 0;
-    color: #248A83;
-    font-size: 1.3rem;
-    letter-spacing: .1rem;
-    line-height: normal; }
-    .home-journal-display h3:hover {
-      color: #000;
-      transition: all 0.1s; }
+.home-journal-display h3 {
+  margin-top: 0;
+  color: #248A83;
+  font-size: 1.3rem;
+  letter-spacing: .1rem;
+  line-height: normal; }
+  .home-journal-display h3:hover {
+    color: #000;
+    transition: all 0.1s; }
 
 .home-latest-posts {
   height: 25rem;
@@ -1009,9 +1006,8 @@ object {
 
 /* Journal Home Page */
 .blog .site-content {
-  width: 100%;
-  padding-left: 5rem;
-  padding-right: 5rem;
+  max-width: 1120px;
+  margin: auto;
   display: -ms-flexbox;
   display: flex; }
   .blog .site-content .site-main {
@@ -1044,12 +1040,14 @@ object {
   color: #FFF; }
 
 .about-content {
-  padding: 2.5rem 14rem; }
+  padding: 3rem 0; }
   .about-content h2 {
     margin-top: 0;
     color: #2f1339;
     letter-spacing: 0.15rem;
     text-align: center; }
+  .about-content p {
+    padding: 0 10rem; }
 
 /*--------------------------------------------------------------
 # Product Page Templates
@@ -1100,8 +1098,6 @@ object {
   background-image: url("../../images/dark-wood.png"); }
 
 footer .site-info {
-  padding-left: 5rem;
-  padding-right: 5rem;
   padding-top: 4rem;
   display: -ms-flexbox;
   display: flex;

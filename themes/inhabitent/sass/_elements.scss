@@ -20,8 +20,7 @@ body {
 }
 
 .container {
-	max-width: 1120px;
-	margin: auto;
+	@include container;
 }
 
 blockquote, q {

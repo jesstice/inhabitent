@@ -15,7 +15,7 @@ get_header(); ?>
 			</header>
 
 			<?php while ( have_posts() ) : the_post(); ?>
-				<div class="about-content">
+				<div class="about-content container">
 					<h2>Our Story</h2>
 					<?php echo CFS()->get( 'our_story' ); ?>
 					<h2>Our Team</h2>				
