@@ -1,4 +1,12 @@
 <?php
+/**
+ * The template for displaying the Home Page.
+ *
+ * @package Inhabitent_Theme
+ */
+?>
+
+<?php
 
 get_header(); ?>
 
@@ -7,7 +15,7 @@ get_header(); ?>
 </div>
 
 <!--Shop Products Section-->
-<div>
+<section class="container">
   <h2>Shop Stuff</h2>
   
   <?php
@@ -27,7 +35,7 @@ get_header(); ?>
   <?php endforeach; ?>
   <?php endif; ?>
 
-</div>
+</section>
 
 <!--Display 3 latest blog posts-->
 

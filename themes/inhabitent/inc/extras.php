@@ -67,7 +67,7 @@ add_action( 'wp_enqueue_scripts', 'inhabitent_add_about_css' );
 
 // Add the title to the Products and Products Type pages
 add_filter( 'get_the_archive_title', function ( $title ) {
-    if( is_post_type_archive() ) {
+    if( is_post_type_archive('product') ) {
     	$title = 'Shop Stuff';
 		} elseif (is_tax( 'product-type' )) {
 			$title = single_term_title( '', false );
@@ -138,11 +138,3 @@ function inhabitent_wp_trim_excerpt( $text ) {
 
 remove_filter( 'get_the_excerpt', 'wp_trim_excerpt' );
 add_filter( 'get_the_excerpt', 'inhabitent_wp_trim_excerpt' );
-
-// Add search bar
-add_filter( 'wp_nav_menu_items','add_search_box', 10, 2 );
-
-function add_search_box( $items, $args ) {
-    $items .= '<li>' . get_search_form( false ) . '</li>';
-    return $items;
-}

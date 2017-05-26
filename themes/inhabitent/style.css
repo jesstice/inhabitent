@@ -356,6 +356,10 @@ body {
   background: #fff;
   /* Fallback for when there is no custom background color defined. */ }
 
+.container {
+  max-width: 1120px;
+  margin: auto; }
+
 blockquote, q {
   quotes: "" ""; }
   blockquote:before, blockquote:after, q:before, q:after {
@@ -483,19 +487,28 @@ a {
   padding: 0;
   font-family: "Novecento", san-serif; }
 
-.search-submit {
+.search-form .search-submit {
+  padding: 0 0.75rem;
   background: transparent;
   box-shadow: none;
   color: #248A83;
   font-size: 1rem;
   line-height: normal;
-  text-shadow: none; }
+  text-shadow: none;
+  outline: 0; }
 
-input.search-field {
-  border: 0;
+.search-form input.search-field {
   padding: 0;
+  display: none;
   background: transparent;
-  font-family: "Novecento", san-serif; }
+  border: 0;
+  font-family: "Novecento", san-serif;
+  outline: 0;
+  transition: width 1s; }
+
+.nav-menu-search {
+  display: -ms-flexbox;
+  display: flex; }
 
 /* Menus */
 .site-header {
@@ -508,8 +521,6 @@ input.search-field {
 .main-navigation {
   height: 3rem;
   width: 100%;
-  padding-left: 5rem;
-  padding-right: 5rem;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;

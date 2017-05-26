@@ -1,10 +1,10 @@
 <?php
 /**
- * RED Starter Theme functions and definitions.
+ * Inhabitent Theme functions and definitions.
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package inhabitent_Theme
+ * @package Inhabitent_Theme
  */
 
 if ( ! function_exists( 'inhabitent_setup' ) ) :
@@ -85,9 +85,10 @@ add_filter( 'stylesheet_uri', 'inhabitent_minified_css', 10, 2 );
 function inhabitent_scripts() {
 	wp_enqueue_style( 'inhabitent-style', get_stylesheet_uri() );
 	wp_enqueue_script( 'font-awesome-cdn', 'https://use.fontawesome.com/485ad86577.js', array(), '4.7.0');
+	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 
-	wp_enqueue_script( 'nav-menu', get_template_directory_uri() . '/build/js/nav-menu.min.js', array('jquery'), '20130115', true );
+	wp_enqueue_script( 'nav-menu', get_template_directory_uri() . '/build/js/nav-menu.min.js', array('jquery'), false, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

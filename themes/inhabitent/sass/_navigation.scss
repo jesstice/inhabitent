@@ -25,38 +25,44 @@ a {
 }
 
 /* Search Bar */
-
 .search-form {
+
 	fieldset, .search-submit {
 		border: none;
     margin: 0;
     padding: 0;
 		font-family: $font__accent;
 	}
+	// Search icon    
+	.search-submit {
+		padding: 0 0.75rem;		
+		background: rgba(0, 0, 0, 0);
+		box-shadow: none;
+		color: $color__green-brand;
+		font-size: 1rem;
+		line-height: normal;
+		text-shadow: none;
+		outline: 0;
+	}
+
+	// Search Field
+	input.search-field {
+		padding: 0;
+		display: none;
+		background: transparent;
+		border: 0;
+		font-family: $font__accent;
+		outline: 0;
+		transition: width 1s;
+	}
+
 }
 
-// Search icon    
-.search-submit {
-	background: rgba(0, 0, 0, 0);
-	box-shadow: none;
-	color: $color__green-brand;
-	font-size: 1rem;
-  line-height: normal;
-	text-shadow: none;
+.nav-menu-search {
+	display: flex;
 }
-
-// Search Field
-input.search-field {
-	border: 0;
-  padding: 0;
-  background: transparent;
-	font-family: $font__accent;	
-
-}
-
 
 /* Menus */
-
 .site-header {
 	position: fixed;
   width: 100%;
@@ -68,7 +74,7 @@ input.search-field {
 .main-navigation {
 	height: 3rem;
 	width: 100%;
-	@include side-padding;
+	// @include side-padding;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;

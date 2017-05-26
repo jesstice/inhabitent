@@ -19,6 +19,11 @@ body {
 	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
 }
 
+.container {
+	max-width: 1120px;
+	margin: auto;
+}
+
 blockquote, q {
 	quotes: "" "";
 

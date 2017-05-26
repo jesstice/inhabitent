@@ -1,8 +1,8 @@
 <?php
 /**
- * The sidebar containing the main widget area.s
+ * The sidebar containing the main widget area.
  *
- * @package inhabitent_Theme
+ * @package Inhabitent_Theme
  */
 
 if ( ! is_active_sidebar( 'sidebar-1' ) ) {

@@ -2,7 +2,7 @@
 /**
  * The template for displaying all single product posts.
  *
- * @package RED_Starter_Theme
+ * @package Inhabitent_Theme
  */
 
 get_header(); ?>
@@ -18,6 +18,7 @@ get_header(); ?>
             <?php the_post_thumbnail( 'large' ); ?>
           <?php endif; ?>
 
+					<div>
           <?php the_title( sprintf( '<div class="entry-title"><h2><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2></div>' ); ?>
 
           <?php if ( 'post' === get_post_type() ) : ?>
@@ -41,13 +42,13 @@ get_header(); ?>
 				<footer class="entry-footer">
 					<?php red_starter_entry_footer(); ?>
 				</footer><!-- .entry-footer -->
-
-				<?php
+				<div>
+				<!--<?php
 					// If comments are open or we have at least one comment, load up the comment template.
 					if ( comments_open() || get_comments_number() ) :
 						comments_template();
 					endif;
-				?>
+				?>-->
 		</article>
 		<?php endwhile; // End of the loop. ?>
 

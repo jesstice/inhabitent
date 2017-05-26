@@ -1,5 +1,12 @@
 <?php
+/**
+ * The template for displaying the Journal archive page.
+ *
+ * @package Inhabitent_Theme
+ */
+?>
 
+<?php
 get_header(); ?>
 
 	<div id="primary" class="content-area">
