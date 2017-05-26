@@ -15,3 +15,64 @@
 .widget_search .search-submit {
 	display: none;
 }
+
+/*--------------------------------------------------------------
+# Sidebar
+--------------------------------------------------------------*/
+
+.widget-area {
+  padding-top: 3rem;
+  border-left: 1px solid $color__grey-border;
+
+  aside {
+    margin-top: 4rem;
+  }
+
+  h2 {
+    color: $color__purple-brand;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+  }
+
+}
+
+.sidebar-contact-info {
+  height: 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact-info-text {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    p {
+      margin: 0;
+    }
+
+    .fa {
+      padding-right: 1.5rem;
+    }
+}
+
+// Business Hours
+.business-hours-day {
+	font-weight: bold;
+}
+
+// Archives
+.widget_archive{
+
+  h2 {
+    padding-bottom: 1rem;
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+  }
+}

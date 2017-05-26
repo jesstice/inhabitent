@@ -12,11 +12,7 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
-		<?php $term = get_term_by( 'slug', get_query_var('term'), get_query_var('taxonomy') ); ?>
-
-		<h1 class="page-title"><?php echo $term->name; ?></h1>
-
-		<p><?php echo $term->description; ?></p>
+			<?php the_archive_title( '<h1 class="page-title">', '</h1>' ); ?>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>

@@ -571,6 +571,12 @@ a {
   text-align: right;
   width: 50%; }
 
+/* Search Bar */
+.search-submit {
+  border: none;
+  background: transparent;
+  box-shadow: none; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -640,6 +646,53 @@ a {
 /* Search widget. */
 .widget_search .search-submit {
   display: none; }
+
+/*--------------------------------------------------------------
+# Sidebar
+--------------------------------------------------------------*/
+.widget-area {
+  padding-top: 3rem;
+  border-left: 1px solid rgba(161, 161, 161, 0.5); }
+  .widget-area aside {
+    margin-top: 4rem; }
+  .widget-area h2 {
+    color: #2f1339;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem; }
+
+.sidebar-contact-info {
+  height: 12rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.contact-info-text {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: start;
+      justify-content: flex-start; }
+  .contact-info-text p {
+    margin: 0; }
+  .contact-info-text .fa {
+    padding-right: 1.5rem; }
+
+.business-hours-day {
+  font-weight: bold; }
+
+.widget_archive h2 {
+  padding-bottom: 1rem; }
+
+.widget_archive ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none; }
 
 /*--------------------------------------------------------------
 # Content
@@ -1009,50 +1062,6 @@ object {
 
 .post-type-archive-product article p {
   display: inline-block; }
-
-/*--------------------------------------------------------------
-# Sidebar
---------------------------------------------------------------*/
-.widget-area {
-  padding-top: 3rem;
-  border-left: 1px solid rgba(161, 161, 161, 0.5); }
-  .widget-area aside {
-    margin-top: 4rem; }
-  .widget-area h2 {
-    color: #2f1339;
-    font-size: 1.5rem;
-    letter-spacing: 0.15rem; }
-
-.sidebar-contact-info {
-  height: 12rem;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-pack: justify;
-      justify-content: space-between; }
-
-.contact-info-text {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-direction: row;
-      flex-direction: row;
-  -ms-flex-pack: start;
-      justify-content: flex-start; }
-  .contact-info-text p {
-    margin: 0; }
-  .contact-info-text .fa {
-    padding-right: 1.5rem; }
-
-.sidebar-archives h2 {
-  padding-bottom: 1rem; }
-
-.sidebar-archives .archives-list {
-  margin: 0;
-  padding-left: 0;
-  list-style: none; }
 
 /*--------------------------------------------------------------
 # Footer

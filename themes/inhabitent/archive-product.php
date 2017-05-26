@@ -12,9 +12,7 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
-		<?php
-        the_archive_title( '<h1 class="page-title">', '</h1>' );
-    ?>
+		<?php the_archive_title( '<h1 class="page-title">', '</h1>' ); ?>
 
 			<ul class="products-categories">
 				<?php
