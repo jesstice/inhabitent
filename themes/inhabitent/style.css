@@ -476,6 +476,27 @@ a {
   a:hover, a:active {
     outline: 0; }
 
+/* Search Bar */
+.search-form fieldset, .search-form .search-submit {
+  border: none;
+  margin: 0;
+  padding: 0;
+  font-family: "Novecento", san-serif; }
+
+.search-submit {
+  background: transparent;
+  box-shadow: none;
+  color: #248A83;
+  font-size: 1rem;
+  line-height: normal;
+  text-shadow: none; }
+
+input.search-field {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  font-family: "Novecento", san-serif; }
+
 /* Menus */
 .site-header {
   position: fixed;
@@ -497,6 +518,8 @@ a {
       justify-content: space-between;
   font-family: "Novecento", san-serif;
   text-transform: uppercase; }
+  .main-navigation li {
+    padding: 0 0.75rem; }
   .main-navigation .nav-menu-logo {
     height: 2rem;
     width: 4rem;
@@ -506,7 +529,8 @@ a {
   .main-navigation #primary-menu {
     display: -ms-flexbox;
     display: flex;
-    width: 20rem;
+    -ms-flex-align: center;
+        align-items: center;
     -ms-flex-pack: distribute;
         justify-content: space-around; }
   .main-navigation .menu-main-menu-container {
@@ -570,12 +594,6 @@ a {
   float: right;
   text-align: right;
   width: 50%; }
-
-/* Search Bar */
-.search-submit {
-  border: none;
-  background: transparent;
-  box-shadow: none; }
 
 /*--------------------------------------------------------------
 # Accessibility
