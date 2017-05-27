@@ -2,25 +2,16 @@
 # Product Page Templates
 --------------------------------------------------------------*/
 /* Products & Product Type Pages */
- .post-type-archive-product, .tax-product-type {
-  h1 {
-    width: 100%;
-    margin: 3rem 0 0 0;
-    font-size: 2.5rem;
-    text-align: center;
-  }
-}
 
-/* Products Main Page Only */
+.post-type-archive-product, .tax-product-type {
 
-.post-type-archive-product {
   .site-main {
     @include container;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-
+  
     header {
       width: 100%;
       margin: 2rem 0 3rem 0;
@@ -28,37 +19,28 @@
       align-items: space-around;
       flex-direction: column;
       border-bottom: $dashed_border;
-    }
-  }
 
-  .products-categories {
-    width: 100%;
-    margin: 0;
-    padding: 2rem 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    list-style: none;
-
-    li {
-      margin: 0 1.5rem;
-      font-weight: normal;
-
-      a h3 {
-        font-weight: normal;
-        margin: 0;
+      .taxonomy-description {
+        p {
+          text-align: center;
+        }
       }
+
     }
   }
 
-  .type-product {
-    flex-basis: 23%;
+  h1 {
+      width: 100%;
+      margin: 3rem 0 0 0;
+      font-size: 2.5rem;
+      text-align: center;
   }
 
-  article {
+   .type-product {
     border: $solid_border;
     overflow: hidden;
-
+    flex-basis: 23%;
+    
     a {
       display: flex;
       justify-content: center;
@@ -71,7 +53,6 @@
         width: auto;
       }
     }
-
 
     .product-info {
       display: flex;
@@ -96,8 +77,98 @@
       }
 
     }
-
-    
   }
-
 }
+
+.post-type-archive-product {
+  .products-categories {
+      width: 100%;
+      margin: 0;
+      padding: 2rem 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      list-style: none;
+
+      li {
+        margin: 0 1.5rem;
+        font-weight: normal;
+
+        a h3 {
+          font-weight: normal;
+          margin: 0;
+        }
+      }
+    }
+}
+  
+
+// /* Products Main Page Only */
+// .post-type-archive-product {
+//   // .site-main {
+//   //   @include container;
+//   //   display: flex;
+//   //   flex-direction: row;
+//   //   flex-wrap: wrap;
+//   //   justify-content: space-between;
+
+//     // header {
+//     //   width: 100%;
+//     //   margin: 2rem 0 3rem 0;
+//     //   display: flex;
+//     //   align-items: space-around;
+//     //   flex-direction: column;
+//     //   border-bottom: $dashed_border;
+//     // }
+//   // }
+
+  
+
+//   // .type-product {
+//   //   flex-basis: 23%;
+//   // }
+
+//   // article {
+//   //   border: $solid_border;
+//   //   overflow: hidden;
+
+//   //   a {
+//   //     display: flex;
+//   //     justify-content: center;
+//   //     border-bottom: $solid_border;
+//   //     border-width: 5px;
+
+//   //     img {
+//   //       min-height: 16rem;
+//   //       max-width: none;
+//   //       width: auto;
+//   //     }
+//   //   }
+
+
+//   //   .product-info {
+//   //     display: flex;
+//   //     padding: 1rem;
+//   //     justify-content: space-between;
+//   //     position: relative;
+    
+//   //     p {
+//   //       margin: 0;
+//   //       padding: 0 0.25rem;
+//   //       display: inline-block;
+//   //       background: white;
+//   //       z-index: 10;
+//   //     }
+    
+//   //     .dotted-line {
+//   //       top: 58%;
+//   //       border-bottom: 2px dotted #404040;
+//   //       width: 85%;
+//   //       position: absolute;
+//   //       z-index: 0;
+//   //     }
+
+//   //   }
+
+
+// }
