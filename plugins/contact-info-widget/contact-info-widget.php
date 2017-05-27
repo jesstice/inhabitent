@@ -95,6 +95,7 @@ class Contact_Info_Widget extends WP_Widget {
 		$phone_number = empty( $instance['phone_number'] ) ? '' : apply_filters( 'widget_title', $instance['phone_number'] );
 		$email = empty( $instance['email'] ) ? '' : apply_filters( 'widget_title', $instance['email'] );
 		$address = empty( $instance['address'] ) ? '' : apply_filters( 'widget_title', $instance['address'] );
+		$social_media = $instance[ 'social_media' ] ? 'true' : 'false';
 
 		ob_start();
 
@@ -126,6 +127,7 @@ class Contact_Info_Widget extends WP_Widget {
 		$instance['phone_number'] = strip_tags( $new_instance['phone_number'] );
 		$instance['email'] = strip_tags( $new_instance['email'] );		
 		$instance['address'] = strip_tags( $new_instance['address'] );
+		$instance[ 'social_media' ] = $new_instance[ 'social_media' ];
 
 		return $instance;
 
@@ -144,7 +146,8 @@ class Contact_Info_Widget extends WP_Widget {
 				'title' => 'Contact Info',
 				'phone_number' => '',
 				'email' => '',
-				'address' => ''
+				'address' => '',
+				'social_media' => ''
 			)
 		);
 
@@ -152,6 +155,7 @@ class Contact_Info_Widget extends WP_Widget {
 		$phone_number = strip_tags( $instance['phone_number'] );
 		$email = strip_tags( $instance['email'] );
 		$address = strip_tags( $instance['address'] );
+		$social_media = strip_tags( $instance['social_media'] );
 
 		// Display the admin form
 		include( plugin_dir_path( __FILE__ ) . 'views/admin.php' );

@@ -11,28 +11,13 @@
 
 		<footer id="colophon" class="site-footer" role="contentinfo">
 			<div class="container">
-				<div class="site-info">
-
-					<div class="footer-contact-info">
-						<h3>Contact Info</h3>
-						<div class="contact-info-text">
-							<i class="fa fa-fw fa-phone" aria-hidden="true"></i>
-							<p class="contact-info-paragraph">778-456-7891</p>
-						</div>
-						<div class="contact-info-text">
-							<i class="fa fa-fw fa-envelope" aria-hidden="true"></i>
-							<p class="contact-info-paragraph"><a href="mailto:info@inhabitent.com">info@inhabitent.com</a></p>
-						</div>
-						<div class="contact-info-text">
-							<i class="fa fa-facebook-square" aria-hidden="true"></i>
-							<i class="fa fa-twitter-square" aria-hidden="true"></i>
-							<i class="fa fa-google-plus-square" aria-hidden="true"></i>
-						</div>
-					</div>
-
-					<div class="footer-business-hours">
-						<!--widget to go here?-->
-					</div>
+				<div id="footer-sidebar" class="secondary">
+						<?php
+						if(is_active_sidebar('footer-1')){
+							dynamic_sidebar('footer-1');
+						}
+						?>
+				</div>
 
 					<div class="footer-logo">
 						<a href="<?php echo get_home_url(); ?>">

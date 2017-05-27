@@ -13,7 +13,13 @@
 		<input class="widefat" id="<?php echo $this->get_field_id('email'); ?>" name="<?php echo $this->get_field_name('email'); ?>" type="text" value="<?php echo $email; ?>">
    </p>
 
-   <p><label for="<?php echo $this->get_field_id('address'); ?>">Address:</label>
+   <p><label for="<?php echo $this->get_field_id('address'); ?>">Address (do not add for footer):</label>
 		<input class="widefat" id="<?php echo $this->get_field_id('address'); ?>" name="<?php echo $this->get_field_name('address'); ?>" type="text" value="<?php echo $address; ?>">
    </p>
+
+   <p>
+    <input class="checkbox" type="checkbox" <?php checked( $instance[ 'social_media' ], 'on' ); ?> id="<?php echo $this->get_field_id( 'social_media' ); ?>" name="<?php echo $this->get_field_name( 'social_media' ); ?>" /> 
+    <label for="<?php echo $this->get_field_id( 'social_media' ); ?>">Check for Social Media icons (required for footer).</label>
+  </p>
+
 </div>

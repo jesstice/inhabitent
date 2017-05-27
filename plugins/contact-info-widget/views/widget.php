@@ -17,3 +17,11 @@
     <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> <?php echo $address ?>
   </p>
 <?php endif; ?>
+
+<?php if ( isset( $social_media )) : ?>
+  <p class="footer-social-media">
+    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+		<i class="fa fa-twitter-square" aria-hidden="true"></i>
+		<i class="fa fa-google-plus-square" aria-hidden="true"></i>
+  </p>
+<?php endif; ?>

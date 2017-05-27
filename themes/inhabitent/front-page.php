@@ -69,9 +69,9 @@ get_header(); ?>
 </section>
 
 <!--Adventures Section-->
-<div class="container">
+<section class="container">
   <h2>Latest Adventures</h2>
   <p>To be added....</p>
-</div>
+</section>
 
 <?php get_footer(); ?>

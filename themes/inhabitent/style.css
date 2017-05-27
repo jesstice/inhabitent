@@ -725,6 +725,57 @@ a {
   list-style: none; }
 
 /*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.site-footer {
+  height: 18rem;
+  background-image: url("../../images/dark-wood.png"); }
+
+#footer-sidebar {
+  padding-top: 4rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row; }
+  #footer-sidebar h3 {
+    margin: 0;
+    color: #d99054;
+    font-family: "Novecento", san-serif;
+    text-transform: uppercase; }
+  #footer-sidebar p, #footer-sidebar a, #footer-sidebar .fa {
+    color: #fff; }
+
+.footer-contact-info {
+  height: 10rem;
+  width: 25%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  .footer-contact-info .fa {
+    font-size: 1.25rem; }
+
+.footer-business-hours {
+  width: 25%; }
+
+.footer-logo {
+  width: 50%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end; }
+  .footer-logo a {
+    width: 50%; }
+
+.footer-copyright {
+  color: #fff;
+  font-family: "Novecento", san-serif;
+  text-align: center;
+  text-transform: uppercase; }
+
+/*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
 /* Posts and pages */
@@ -942,6 +993,53 @@ object {
   font-weight: normal;
   text-align: center; }
 
+.shop-categories {
+  margin: 0;
+  padding: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  list-style: none; }
+  .shop-categories li {
+    height: 17rem;
+    width: 23.5%;
+    padding: 0.75rem;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    border: 1px solid #e1e1e1;
+    border-top-width: 5px;
+    text-align: center;
+    transition: border 0.1s; }
+    .shop-categories li:hover {
+      border: 1px solid #d99054;
+      border-top-width: 5px; }
+    .shop-categories li img {
+      height: 4rem; }
+    .shop-categories li p {
+      margin: 0;
+      line-height: 1.75rem; }
+    .shop-categories li a {
+      width: 50%;
+      background: #248A83;
+      color: #FFF;
+      transition: background 0.1s; }
+      .shop-categories li a:hover {
+        background: #14625d; }
+      .shop-categories li a h3 {
+        margin: 0;
+        padding: 0.5rem 0;
+        font-size: 0.9rem;
+        font-weight: normal; }
+
 .home-journal-display h3 {
   margin-top: 0;
   color: #248A83;
@@ -1026,53 +1124,6 @@ object {
     .blog .site-content #secondary h2 {
       margin: 0; }
 
-.shop-categories {
-  margin: 0;
-  padding: 0;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  list-style: none; }
-  .shop-categories li {
-    height: 17rem;
-    width: 23.5%;
-    padding: 0.75rem;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-        align-items: center;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    border: 1px solid #e1e1e1;
-    border-top-width: 5px;
-    text-align: center;
-    transition: border 0.1s; }
-    .shop-categories li:hover {
-      border: 1px solid #d99054;
-      border-top-width: 5px; }
-    .shop-categories li img {
-      height: 4rem; }
-    .shop-categories li p {
-      margin: 0;
-      line-height: 1.75rem; }
-    .shop-categories li a {
-      width: 50%;
-      background: #248A83;
-      color: #FFF;
-      transition: background 0.1s; }
-      .shop-categories li a:hover {
-        background: #14625d; }
-      .shop-categories li a h3 {
-        margin: 0;
-        padding: 0.5rem 0;
-        font-size: 0.9rem;
-        font-weight: normal; }
-
 /* About page */
 .page-id-25 h1 {
   margin: 0; }
@@ -1137,54 +1188,3 @@ object {
 
 .post-type-archive-product article p {
   display: inline-block; }
-
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
-.site-footer {
-  height: 18rem;
-  background-image: url("../../images/dark-wood.png"); }
-
-footer .site-info {
-  padding-top: 4rem;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row; }
-  footer .site-info h3 {
-    margin: 0;
-    color: #d99054;
-    font-family: "Novecento", san-serif;
-    text-transform: uppercase; }
-  footer .site-info p, footer .site-info a, footer .site-info .fa {
-    color: #fff; }
-
-.footer-contact-info {
-  height: 10rem;
-  width: 25%;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-pack: justify;
-      justify-content: space-between; }
-  .footer-contact-info .fa {
-    font-size: 1.25rem; }
-
-.footer-business-hours {
-  width: 25%; }
-
-.footer-logo {
-  width: 50%;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: end;
-      justify-content: flex-end; }
-  .footer-logo a {
-    width: 50%; }
-
-.footer-copyright {
-  color: #fff;
-  font-family: "Novecento", san-serif;
-  text-align: center;
-  text-transform: uppercase; }
