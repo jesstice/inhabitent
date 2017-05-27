@@ -504,6 +504,7 @@ a {
   border: 0;
   font-family: "Novecento", san-serif;
   outline: 0;
+  text-transform: uppercase;
   transition: width 1s; }
 
 .nav-menu-search {
@@ -1024,6 +1025,53 @@ object {
     padding-left: 4rem; }
     .blog .site-content #secondary h2 {
       margin: 0; }
+
+.shop-categories {
+  margin: 0;
+  padding: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  list-style: none; }
+  .shop-categories li {
+    height: 17rem;
+    width: 23.5%;
+    padding: 0.75rem;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    border: 1px solid #e1e1e1;
+    border-top-width: 5px;
+    text-align: center;
+    transition: border 0.1s; }
+    .shop-categories li:hover {
+      border: 1px solid #d99054;
+      border-top-width: 5px; }
+    .shop-categories li img {
+      height: 4rem; }
+    .shop-categories li p {
+      margin: 0;
+      line-height: 1.75rem; }
+    .shop-categories li a {
+      width: 50%;
+      background: #248A83;
+      color: #FFF;
+      transition: background 0.1s; }
+      .shop-categories li a:hover {
+        background: #14625d; }
+      .shop-categories li a h3 {
+        margin: 0;
+        padding: 0.5rem 0;
+        font-size: 0.9rem;
+        font-weight: normal; }
 
 /* About page */
 .page-id-25 h1 {

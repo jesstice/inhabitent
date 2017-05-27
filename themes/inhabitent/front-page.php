@@ -26,15 +26,19 @@ get_header(); ?>
 
     if (!empty($product_types) && !is_wp_error($product_types)):
   ?>
+  <ul class="shop-categories">
+    <?php foreach ($product_types as $product_type):?>
+      <li>
 
-  <?php foreach ($product_types as $product_type):?>
-    <?php echo $product_type->description; ?>
-    <a href="<?php echo get_term_link($product_type) ?>">
-      <h3><?php echo $product_type->name; ?> Stuff</h3>
-    </a>
-  <?php endforeach; ?>
-  <?php endif; ?>
-
+        <img src="<?php echo get_stylesheet_directory_uri() ?>/images/<?php echo $product_type->name ?>.svg">
+        <p><?php echo $product_type->description; ?></p>
+        <a href="<?php echo get_term_link($product_type) ?>">
+          <h3><?php echo $product_type->name; ?> Stuff</h3>
+        </a>
+      </li>
+    <?php endforeach; ?>
+    <?php endif; ?>
+  </ul>
 </section>
 
 <!--Display 3 latest blog posts-->
