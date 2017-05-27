@@ -728,15 +728,23 @@ a {
 # Footer
 --------------------------------------------------------------*/
 .site-footer {
-  height: 18rem;
+  padding: 1rem;
   background-image: url("../../images/dark-wood.png"); }
+  .site-footer .container {
+    padding: 3rem 0 1rem 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
 
 #footer-sidebar {
-  padding-top: 4rem;
+  width: 50%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row; }
+  #footer-sidebar .widget {
+    width: 50%; }
   #footer-sidebar h3 {
     margin: 0;
     color: #d99054;
@@ -745,17 +753,11 @@ a {
   #footer-sidebar p, #footer-sidebar a, #footer-sidebar .fa {
     color: #fff; }
 
-.footer-contact-info {
-  height: 10rem;
-  width: 25%;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-pack: justify;
-      justify-content: space-between; }
-  .footer-contact-info .fa {
-    font-size: 1.25rem; }
+#contact-info-3 .fa {
+  font-size: 1.25rem; }
+
+#contact-info-3 .footer-social-media .fa {
+  padding-right: 0.5rem; }
 
 .footer-business-hours {
   width: 25%; }
@@ -770,10 +772,13 @@ a {
     width: 50%; }
 
 .footer-copyright {
+  width: 100%;
   color: #fff;
   font-family: "Novecento", san-serif;
   text-align: center;
   text-transform: uppercase; }
+  .footer-copyright p {
+    margin: 3rem 0 0 0; }
 
 /*--------------------------------------------------------------
 # Content
