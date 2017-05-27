@@ -1161,12 +1161,13 @@ object {
 .post-type-archive-product h1, .tax-product-type h1 {
   width: 100%;
   margin: 3rem 0 0 0;
+  font-size: 2.5rem;
   text-align: center; }
 
 /* Products Main Page Only */
 .post-type-archive-product .site-main {
-  padding-left: 5rem;
-  padding-right: 5rem;
+  max-width: 1120px;
+  margin: auto;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
@@ -1175,6 +1176,16 @@ object {
       flex-wrap: wrap;
   -ms-flex-pack: justify;
       justify-content: space-between; }
+  .post-type-archive-product .site-main header {
+    width: 100%;
+    margin: 2rem 0 3rem 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: space-around;
+        align-items: space-around;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    border-bottom: 1px dashed #c8c8c8; }
 
 .post-type-archive-product .products-categories {
   width: 100%;
@@ -1187,10 +1198,47 @@ object {
   -ms-flex-pack: center;
       justify-content: center;
   list-style: none; }
+  .post-type-archive-product .products-categories li {
+    margin: 0 1.5rem;
+    font-weight: normal; }
+    .post-type-archive-product .products-categories li a h3 {
+      font-weight: normal;
+      margin: 0; }
 
 .post-type-archive-product .type-product {
   -ms-flex-preferred-size: 23%;
       flex-basis: 23%; }
 
-.post-type-archive-product article p {
-  display: inline-block; }
+.post-type-archive-product article {
+  border: 1px solid #e1e1e1;
+  overflow: hidden; }
+  .post-type-archive-product article a {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    border-bottom: 1px solid #e1e1e1;
+    border-width: 5px; }
+    .post-type-archive-product article a img {
+      min-height: 16rem;
+      max-width: none;
+      width: auto; }
+  .post-type-archive-product article .product-info {
+    display: -ms-flexbox;
+    display: flex;
+    padding: 1rem;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    position: relative; }
+    .post-type-archive-product article .product-info p {
+      margin: 0;
+      padding: 0 0.25rem;
+      display: inline-block;
+      background: white;
+      z-index: 10; }
+    .post-type-archive-product article .product-info .dotted-line {
+      top: 58%;
+      border-bottom: 2px dotted #404040;
+      width: 85%;
+      position: absolute;
+      z-index: 0; }

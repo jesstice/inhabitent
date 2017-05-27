@@ -12,7 +12,8 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
-		<?php the_archive_title( '<h1 class="page-title">', '</h1>' ); ?>
+		<header>
+			<?php the_archive_title( '<h1 class="page-title">', '</h1>' ); ?>
 
 			<ul class="products-categories">
 				<?php
@@ -29,21 +30,25 @@ get_header(); ?>
 					</a></li>
 				<?php endforeach; ?>
 				<?php endif; ?>
-				
 			</ul>
+		</header>
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-					<?php if ( has_post_thumbnail() ) : ?>
-						<a href="<?php get_permalink() ?>" rel="bookmark"><?php the_post_thumbnail( 'medium' ); ?></a>
-					<?php endif; ?>
-					<?php the_title( sprintf( '<p class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></p>' ); ?>
-        	<?php echo get_post_meta($post->ID, 'price', true); ?>
-				</article>
-			<?php endwhile; ?>
+		<?php /* Start the Loop */ ?>
+		<?php while ( have_posts() ) : the_post(); ?>
+			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+				<?php if ( has_post_thumbnail() ) : ?>
+					<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_post_thumbnail( 'medium' ); ?></a>
+				<?php endif; ?>
 
-			<?php the_posts_navigation(); ?>
+				<div class="product-info">
+					<p><?php the_title() ?></p>
+					<span class="dotted-line"></span>
+					<p><?php echo get_post_meta($post->ID, 'price', true); ?></p>
+				</div>
+			</article>
+		<?php endwhile; ?>
+
+		<?php the_posts_navigation(); ?>
 
 		<?php else : ?>
 
