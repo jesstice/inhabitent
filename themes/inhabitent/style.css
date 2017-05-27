@@ -738,6 +738,7 @@ a {
         flex-wrap: wrap; }
 
 #footer-sidebar {
+  height: 11rem;
   width: 50%;
   display: -ms-flexbox;
   display: flex;
