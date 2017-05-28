@@ -1180,6 +1180,8 @@ object {
         flex-direction: column;
     border-bottom: 1px dashed #c8c8c8; }
     .post-type-archive-product .site-main header .taxonomy-description p, .tax-product-type .site-main header .taxonomy-description p {
+      margin: 0;
+      padding: 2rem 0;
       text-align: center; }
 
 .post-type-archive-product h1, .tax-product-type h1 {
@@ -1213,7 +1215,7 @@ object {
     position: relative; }
     .post-type-archive-product .type-product .product-info p, .tax-product-type .type-product .product-info p {
       margin: 0;
-      padding: 0 0.25rem;
+      padding: 0 0.1rem;
       display: inline-block;
       background: white;
       z-index: 10; }
@@ -1241,3 +1243,28 @@ object {
     .post-type-archive-product .products-categories li a h3 {
       font-weight: normal;
       margin: 0; }
+
+/* Single Product Pages */
+.single-product .site-main {
+  max-width: 1120px;
+  margin: auto; }
+
+.single-product .product {
+  padding: 6rem 0;
+  display: -ms-flexbox;
+  display: flex; }
+  .single-product .product .wp-post-image {
+    padding-right: 3rem; }
+  .single-product .product .product-info {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%; }
+    .single-product .product .product-info h1 {
+      margin: 0 0 1rem 0;
+      color: #d99054;
+      font-size: 2.4rem; }
+    .single-product .product .product-info .price {
+      margin: 0 0 2rem 0;
+      font-family: "Novecento", san-serif;
+      font-size: 1.75rem; }
+    .single-product .product .product-info p {
+      line-height: 1.75rem; }

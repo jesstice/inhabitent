@@ -7,6 +7,6 @@
     <div class="product-info">
       <p><?php the_title() ?></p>
       <span class="dotted-line"></span>
-      <p>$<?php echo get_post_meta($post->ID, 'price', true); ?></p>
+      <p class="price">$<?php echo get_post_meta($post->ID, 'price', true); ?></p>
     </div>
   </article>

@@ -22,10 +22,11 @@
 
       .taxonomy-description {
         p {
+          margin: 0; 
+          padding: 2rem 0;
           text-align: center;
         }
       }
-
     }
   }
 
@@ -62,7 +63,7 @@
     
       p {
         margin: 0;
-        padding: 0 0.25rem;
+        padding: 0 0.1rem;
         display: inline-block;
         background: white;
         z-index: 10;
@@ -102,73 +103,43 @@
     }
 }
   
-
-// /* Products Main Page Only */
-// .post-type-archive-product {
-//   // .site-main {
-//   //   @include container;
-//   //   display: flex;
-//   //   flex-direction: row;
-//   //   flex-wrap: wrap;
-//   //   justify-content: space-between;
-
-//     // header {
-//     //   width: 100%;
-//     //   margin: 2rem 0 3rem 0;
-//     //   display: flex;
-//     //   align-items: space-around;
-//     //   flex-direction: column;
-//     //   border-bottom: $dashed_border;
-//     // }
-//   // }
-
+/* Single Product Pages */
+.single-product {
   
+  .site-main {
+    @include container;
+  }
 
-//   // .type-product {
-//   //   flex-basis: 23%;
-//   // }
+  .product {
+    padding: 6rem 0;
+    display: flex;
 
-//   // article {
-//   //   border: $solid_border;
-//   //   overflow: hidden;
+    .wp-post-image {
+      padding-right: 3rem;
+    }
 
-//   //   a {
-//   //     display: flex;
-//   //     justify-content: center;
-//   //     border-bottom: $solid_border;
-//   //     border-width: 5px;
+    .product-info {
+      flex-basis: 50%;
 
-//   //     img {
-//   //       min-height: 16rem;
-//   //       max-width: none;
-//   //       width: auto;
-//   //     }
-//   //   }
+      h1 {
+        margin: 0 0 1rem 0;
+        color: $color__orange-brand;
+        font-size: 2.4rem;
+      }
 
+      .price {
+        margin: 0 0 2rem 0;
+        font-family: $font__accent;
+        font-size: 1.75rem;
+      }
 
-//   //   .product-info {
-//   //     display: flex;
-//   //     padding: 1rem;
-//   //     justify-content: space-between;
-//   //     position: relative;
-    
-//   //     p {
-//   //       margin: 0;
-//   //       padding: 0 0.25rem;
-//   //       display: inline-block;
-//   //       background: white;
-//   //       z-index: 10;
-//   //     }
-    
-//   //     .dotted-line {
-//   //       top: 58%;
-//   //       border-bottom: 2px dotted #404040;
-//   //       width: 85%;
-//   //       position: absolute;
-//   //       z-index: 0;
-//   //     }
-
-//   //   }
+      p {
+        line-height: 1.75rem;
+      }
 
 
-// }
+    }
+
+  }
+
+}
