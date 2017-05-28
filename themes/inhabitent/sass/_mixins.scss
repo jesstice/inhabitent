@@ -16,7 +16,13 @@
 	padding-right: 5rem;
 }
 
+// Contain content
 @mixin container {
 	max-width: 1120px;
 	margin: auto;
+}
+
+@mixin font-accent {
+	font-family: $font__accent;
+  text-transform: uppercase;
 }
