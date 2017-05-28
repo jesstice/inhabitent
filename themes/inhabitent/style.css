@@ -1110,24 +1110,25 @@ object {
     padding: 0.75rem 1.5rem; }
 
 /* Journal Home Page */
-.blog .site-content {
+.blog .site-content, .page-id-21 .site-content {
   max-width: 1120px;
   margin: auto;
   display: -ms-flexbox;
   display: flex; }
-  .blog .site-content .site-main {
+  .blog .site-content .site-main, .page-id-21 .site-content .site-main {
     padding-top: 3rem;
     padding-right: 4rem; }
-  .blog .site-content .post {
+  .blog .site-content .post, .page-id-21 .site-content .post {
     margin: 3rem 0rem 4rem 0rem; }
-  .blog .site-content #primary {
+  .blog .site-content #primary, .page-id-21 .site-content #primary {
     -ms-flex-preferred-size: 73%;
-        flex-basis: 73%; }
-  .blog .site-content #secondary {
+        flex-basis: 73%;
+    max-width: 73%; }
+  .blog .site-content #secondary, .page-id-21 .site-content #secondary {
     -ms-flex-preferred-size: 27%;
         flex-basis: 27%;
     padding-left: 4rem; }
-    .blog .site-content #secondary h2 {
+    .blog .site-content #secondary h2, .page-id-21 .site-content #secondary h2 {
       margin: 0; }
 
 /* About page */
@@ -1154,6 +1155,7 @@ object {
   .about-content p {
     padding: 0 10rem; }
 
+/* Standard Page Template (Find Us) */
 /*--------------------------------------------------------------
 # Product Page Templates
 --------------------------------------------------------------*/
