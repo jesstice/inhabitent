@@ -18,10 +18,13 @@
   </p>
 <?php endif; ?>
 
-<?php if ( isset( $social_media )) : ?>
+
+ <?php if ( isset( $instance['social_media']) ): ?>
+  
   <p class="footer-social-media">
     <i class="fa fa-facebook-square" aria-hidden="true"></i>
 		<i class="fa fa-twitter-square" aria-hidden="true"></i>
 		<i class="fa fa-google-plus-square" aria-hidden="true"></i>
   </p>
-<?php endif; ?>
+
+ <?php endif; ?>

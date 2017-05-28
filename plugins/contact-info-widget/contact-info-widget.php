@@ -147,7 +147,7 @@ class Contact_Info_Widget extends WP_Widget {
 				'phone_number' => '',
 				'email' => '',
 				'address' => '',
-				'social_media' => ''
+				'social_media' => true
 			)
 		);
 
