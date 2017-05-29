@@ -143,6 +143,10 @@
 }
 
 /* Comments */
+.comments-title {
+	margin: 5rem 0 0 0;
+	color: $color__purple-brand;
+}
 
 .comments-link {
 	a, a:visited {
@@ -154,11 +158,67 @@
 	}
 }
 
-.comment-content a {
-	word-wrap: break-word;
+.comment-content {
+	margin-left: 1.5rem;
+
+	.comment-author {
+		font-weight: bold;
+
+		cite {
+			font-style: normal;
+		}
+	}
+
+	a {
+		word-wrap: break-word;
+	}
+
+	.comment-metadata {
+		time {
+			color: $color__light-grey
+		}
+	}
 }
+
 .bypostauthor {
 	display: block;
+}
+
+.comment-list {
+	margin: 0;
+	padding: 0;
+
+	.depth-1 {
+		border-bottom: $solid_border;	
+	}
+
+	.comment-body {
+		padding: 1.5rem 0;
+		display: flex;
+	}
+
+	.comment-author-avatar {
+		img {
+			border-radius: 50%;
+		}
+	}
+
+	.children {
+		.comment-body {
+			border-top: $solid_border;	
+		}
+	}
+}
+
+.comment-reply-title {
+	font-size: 1.75rem;
+}
+
+.comment-form {
+	label {
+		color: $color__purple-brand;
+		@include font-accent;
+	}
 }
 
 /* Social Media Icons */

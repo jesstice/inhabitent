@@ -887,17 +887,51 @@ a {
   display: none; }
 
 /* Comments */
+.comments-title {
+  margin: 5rem 0 0 0;
+  color: #2f1339; }
+
 .comments-link a, .comments-link a:visited {
   color: #FFF; }
 
 .comments-link a:hover {
   color: #f0e4d1; }
 
-.comment-content a {
-  word-wrap: break-word; }
+.comment-content {
+  margin-left: 1.5rem; }
+  .comment-content .comment-author {
+    font-weight: bold; }
+    .comment-content .comment-author cite {
+      font-style: normal; }
+  .comment-content a {
+    word-wrap: break-word; }
+  .comment-content .comment-metadata time {
+    color: #a1a1a1; }
 
 .bypostauthor {
   display: block; }
+
+.comment-list {
+  margin: 0;
+  padding: 0; }
+  .comment-list .depth-1 {
+    border-bottom: 1px solid #e1e1e1; }
+  .comment-list .comment-body {
+    padding: 1.5rem 0;
+    display: -ms-flexbox;
+    display: flex; }
+  .comment-list .comment-author-avatar img {
+    border-radius: 50%; }
+  .comment-list .children .comment-body {
+    border-top: 1px solid #e1e1e1; }
+
+.comment-reply-title {
+  font-size: 1.75rem; }
+
+.comment-form label {
+  color: #2f1339;
+  font-family: "Novecento", san-serif;
+  text-transform: uppercase; }
 
 /* Social Media Icons */
 .social-media-icons {
