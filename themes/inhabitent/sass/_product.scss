@@ -13,8 +13,8 @@
     justify-content: space-between;
   
     header {
-      width: 100%;
       margin: 2rem 0 3rem 0;
+      width: 100%;
       display: flex;
       align-items: space-around;
       flex-direction: column;
@@ -39,8 +39,8 @@
 
    .type-product {
     border: $solid_border;
-    overflow: hidden;
     flex-basis: 23%;
+    overflow: hidden;
     
     a {
       display: flex;
@@ -71,9 +71,9 @@
     
       .dotted-line {
         top: 58%;
-        border-bottom: 2px dotted #404040;
         width: 85%;
         position: absolute;
+        border-bottom: 2px dotted #404040;
         z-index: 0;
       }
 
@@ -83,24 +83,24 @@
 
 .post-type-archive-product {
   .products-categories {
-      width: 100%;
-      margin: 0;
-      padding: 2rem 0;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
 
-      li {
-        margin: 0 1.5rem;
+    li {
+      margin: 0 1.5rem;
+      font-weight: normal;
+
+      a h3 {
+        margin: 0;
         font-weight: normal;
-
-        a h3 {
-          font-weight: normal;
-          margin: 0;
-        }
       }
     }
+  }
 }
   
 /* Single Product Pages */

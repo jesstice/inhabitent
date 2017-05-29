@@ -1,3 +1,12 @@
+<?php
+/**
+ * Template part for displaying social media icons.
+ *
+ * @package Inhabitent_Theme
+ */
+
+?>
+
 		<a class="social-media-icons" href="#">
 			<p><i class="fa fa-facebook" aria-hidden="true"></i> Like</p>
 		</a>

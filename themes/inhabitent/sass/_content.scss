@@ -71,8 +71,7 @@
 
 		h2 {
 			margin: 0;
-			font-family: $font__accent;
-			text-transform: uppercase;
+			@include font-accent;
 		}
 	}
 
@@ -84,8 +83,7 @@
 	.entry-header {
 		position: relative;
 		color: #fff;
-		font-family: $font__accent;
-		text-transform: uppercase;
+		@include font-accent;
 		
 		.wp-post-image {
 				height: 32.56rem;
@@ -127,8 +125,7 @@
 
 /* Entry Footer */
 .entry-footer {
-	font-family: $font__accent;
-	text-transform: uppercase;
+	@include font-accent;
 
 	span {
 		margin-right: 1.5rem;
@@ -235,10 +232,9 @@
   background-color: #FFF;
   border: 1px solid #000;
   color: #000;
-  font-family: $font__accent;
+	@include font-accent;
   font-size: 0.9rem;
   text-align: center;
-  text-transform: uppercase;
 
   &:hover {
     background-color: $color__green-brand;

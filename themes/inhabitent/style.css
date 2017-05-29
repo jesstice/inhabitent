@@ -1,9 +1,9 @@
 /*!
-Theme Name: RED Starter Theme
+Theme Name: Inhabitent Theme
 Theme URI: http://underscores.me/
-Author: RED Academy
-Author URI: http://www.redacademy.com
-Description: A WordPress starter theme for RED Academy students.
+Author: Jessica Dieuique
+Author URI: https://github.com/jesstice/inhabitent
+Description: A WordPress theme for hipster camping goods.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -556,10 +556,10 @@ a {
     -ms-flex-align: center;
         align-items: center; }
   .main-navigation ul {
-    display: none;
-    list-style: none;
     margin: 0;
-    padding-left: 0; }
+    padding-left: 0;
+    display: none;
+    list-style: none; }
     .main-navigation ul ul {
       box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       position: absolute;
@@ -781,8 +781,8 @@ a {
   width: 100%;
   color: #fff;
   font-family: "Novecento", san-serif;
-  text-align: center;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-align: center; }
   .footer-copyright p {
     margin: 3rem 0 0 0; }
 
@@ -960,9 +960,9 @@ a {
   border: 1px solid #000;
   color: #000;
   font-family: "Novecento", san-serif;
+  text-transform: uppercase;
   font-size: 0.9rem;
-  text-align: center;
-  text-transform: uppercase; }
+  text-align: center; }
   .social-media-icons:hover {
     background-color: #248A83;
     border: 1px solid #248A83;
@@ -1044,8 +1044,8 @@ object {
   -ms-flex-pack: center;
       justify-content: center;
   background-image: linear-gradient(rgba(36, 36, 36, 0.3), rgba(36, 36, 36, 0.3)), url("../../images/home-hero.jpg");
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .home h2 {
   margin-bottom: 4rem;
@@ -1110,8 +1110,8 @@ object {
   margin-bottom: 1rem;
   color: #248A83;
   font-size: 1.3rem;
-  letter-spacing: .1rem;
-  line-height: normal; }
+  line-height: normal;
+  letter-spacing: .1rem; }
   .home-journal-display h3:hover {
     color: #000;
     transition: all 0.1s; }
@@ -1140,10 +1140,10 @@ object {
     border: 1px solid #e1e1e1; }
     .home-latest-posts .home-display-post .wp-post-image {
       max-height: 240px;
-      overflow: hidden;
       width: 100%;
       border-bottom: 1px solid #e1e1e1;
-      border-width: 5px; }
+      border-width: 5px;
+      overflow: hidden; }
     .home-latest-posts .home-display-post .post-display-data {
       height: 40%;
       padding: 0.75rem;
@@ -1190,7 +1190,7 @@ object {
     .adventures li h3, .adventures .large-adventure h3 {
       margin: 2rem 0 1rem 0;
       font-family: "Merriweather", serif;
-      font-weight: lighter;
+      font-weight: normal;
       text-transform: none;
       transition: color 0.1s; }
       .adventures li h3:hover, .adventures .large-adventure h3:hover {
@@ -1215,12 +1215,12 @@ object {
     padding: 0;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
     -ms-flex-preferred-size: 49%;
         flex-basis: 49%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -ms-flex-line-pack: justify;
-        align-content: space-between;
     -ms-flex-pack: justify;
         justify-content: space-between;
     list-style: none; }
@@ -1230,9 +1230,9 @@ object {
           flex-basis: 48%;
       font-size: 1.4rem; }
   .adventures .medium-adventure {
+    height: 48%;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-    height: 48%;
     background: linear-gradient(rgba(36, 36, 36, 0.3), rgba(36, 36, 36, 0.3)), url("../../images/beach-bonfire.jpg") 50% 70%/40rem no-repeat;
     font-size: 2.25rem; }
   .adventures .mountain {
@@ -1378,8 +1378,8 @@ a.more-adventures {
   -ms-flex-pack: justify;
       justify-content: space-between; }
   .post-type-archive-product .site-main header, .tax-product-type .site-main header {
-    width: 100%;
     margin: 2rem 0 3rem 0;
+    width: 100%;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: space-around;
@@ -1400,9 +1400,9 @@ a.more-adventures {
 
 .post-type-archive-product .type-product, .tax-product-type .type-product {
   border: 1px solid #e1e1e1;
-  overflow: hidden;
   -ms-flex-preferred-size: 23%;
-      flex-basis: 23%; }
+      flex-basis: 23%;
+  overflow: hidden; }
   .post-type-archive-product .type-product a, .tax-product-type .type-product a {
     display: -ms-flexbox;
     display: flex;
@@ -1429,9 +1429,9 @@ a.more-adventures {
       z-index: 10; }
     .post-type-archive-product .type-product .product-info .dotted-line, .tax-product-type .type-product .product-info .dotted-line {
       top: 58%;
-      border-bottom: 2px dotted #404040;
       width: 85%;
       position: absolute;
+      border-bottom: 2px dotted #404040;
       z-index: 0; }
 
 .post-type-archive-product .products-categories {
@@ -1449,8 +1449,8 @@ a.more-adventures {
     margin: 0 1.5rem;
     font-weight: normal; }
     .post-type-archive-product .products-categories li a h3 {
-      font-weight: normal;
-      margin: 0; }
+      margin: 0;
+      font-weight: normal; }
 
 /* Single Product Pages */
 .single-product .site-main {
