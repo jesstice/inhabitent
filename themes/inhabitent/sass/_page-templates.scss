@@ -184,6 +184,12 @@
       font-family: $font__main;  
       font-weight: lighter;
       text-transform: none;
+      transition: color 0.1s;
+
+      &:hover {
+        color: $color__yellow-brand;
+      }
+
     }
 
     .post-read-more {
@@ -260,9 +266,9 @@ a.more-adventures {
   }
 }
 
-/* Journal Home Page and Find Us */
+/* Journal Home, Find Us, Search, Error 404 */
 // Style pages with sidebar
-.blog, .page-id-21, .search-results {
+.blog, .page-id-21, .search-results, .error404, .search-no-results {
 	.site-content {
 		@include container;
     padding-top: 3rem;
@@ -291,6 +297,18 @@ a.more-adventures {
 			}
 		}
 	}
+}
+
+// Style like pages
+.search-results, .error404, .page-id-21, .search-no-results {
+  h1 {
+    margin: 0;
+    font-size: 2.25rem;
+  }
+
+  h1, h2 {
+    letter-spacing: 0.1rem;
+  }
 }
 
 /* About page */
@@ -328,10 +346,6 @@ a.more-adventures {
 
   article {
 
-    h1 {
-      font-size: 2.5rem;
-    }
-
     h2 {
       color: $color__purple-brand;
       font-size: 2.1rem;
@@ -366,20 +380,11 @@ a.more-adventures {
 }
 
 /* Search Page */
-.search-results {
+.search-results, .search-no-results {
 
   .page-header {
     padding: 1rem 0;
     border-bottom: $solid_border;
-  }
-
-  h1 {
-    margin: 0;
-    font-size: 2.25rem;
-  }
-
-  h1, h2 {
-    letter-spacing: 0.1rem;
   }
 
   .status-publish {
@@ -390,4 +395,28 @@ a.more-adventures {
     }
   }
 
+}
+
+/* Error 404 Page */
+.error404 {
+
+  h2 {
+    margin: 1.5rem 0;
+    padding: 0;
+    color: $color__purple-brand;
+    font-size: 1.5rem;
+    margin: 2rem 0;
+  }
+
+  .widget {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      li {
+        line-height: 1.75rem;
+      }
+    }
+  }
 }

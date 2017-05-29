@@ -25,38 +25,39 @@ a {
 }
 
 /* Search Bar */
-.search-form {
+.main-navigation {
+	.search-form {
 
-	fieldset, .search-submit {
-		border: none;
-    margin: 0;
-    padding: 0;
-		font-family: $font__accent;
-	}
-	// Search icon    
-	.search-submit {
-		padding: 0 0.75rem;		
-		background: rgba(0, 0, 0, 0);
-		box-shadow: none;
-		color: $color__green-brand;
-		font-size: 1rem;
-		line-height: normal;
-		text-shadow: none;
-		outline: 0;
-	}
+		fieldset, .search-submit {
+			border: none;
+			margin: 0;
+			padding: 0;
+			font-family: $font__accent;
+		}
+		// Search icon    
+		.search-submit {
+			padding: 0 0.75rem;		
+			background: rgba(0, 0, 0, 0);
+			box-shadow: none;
+			color: $color__green-brand;
+			font-size: 1rem;
+			line-height: normal;
+			text-shadow: none;
+			outline: 0;
+		}
 
-	// Search Field
-	input.search-field {
-		padding: 0;
-		display: none;
-		background: transparent;
-		border: 0;
-		font-family: $font__accent;
-		outline: 0;
-		text-transform: uppercase;
-		transition: width 1s;
+		// Search Field
+		input.search-field {
+			padding: 0;
+			display: none;
+			background: transparent;
+			border: 0;
+			font-family: $font__accent;
+			outline: 0;
+			text-transform: uppercase;
+			transition: width 1s;
+		}
 	}
-
 }
 
 .nav-menu-search {

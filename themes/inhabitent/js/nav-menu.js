@@ -11,12 +11,12 @@
     $('.icon-search').click( function(event){
       event.stopPropagation();
       event.preventDefault();
-      $('.search-field').toggle('fast');
+      $('.main-navigation .search-field').toggle('fast');
     });
 
     $(document).click( function(event) {
-      if ( !$('.search-field').is(event.target) ) {
-        $('.search-field').hide('fast');
+      if ( !$('.main-navigation .search-field').is(event.target) ) {
+        $('.main-navigation .search-field').hide('fast');
       }
     });
 

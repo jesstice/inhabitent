@@ -35,11 +35,8 @@
 @mixin submit-button {
 	background: $color__green-brand;
 	border: none;
-	border-radius: 0;
-	box-shadow: none;
 	color: #FFF;
 	font-size: 0.9rem;
-	text-shadow: none;
 	transition: background 0.1s;
 
 	&:hover {

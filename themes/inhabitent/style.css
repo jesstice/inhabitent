@@ -409,23 +409,16 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  border: 1px solid;
-  border-color: #ccc #ccc #bbb;
-  border-radius: 3px;
   background: #e6e6e6;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
   color: rgba(0, 0, 0, 0.8);
   font-size: 12px;
   font-size: 0.75rem;
-  line-height: 1;
-  padding: .6rem 1rem .4rem;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
+  line-height: 1; }
   button:hover,
   input[type="button"]:hover,
   input[type="reset"]:hover,
   input[type="submit"]:hover {
-    border-color: #ccc #bbb #aaa;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02); }
+    border-color: #ccc #bbb #aaa; }
   button:active, button:focus,
   input[type="button"]:active,
   input[type="button"]:focus,
@@ -433,8 +426,7 @@ input[type="submit"] {
   input[type="reset"]:focus,
   input[type="submit"]:active,
   input[type="submit"]:focus {
-    border-color: #aaa #bbb #bbb;
-    box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15); }
+    border-color: #aaa #bbb #bbb; }
 
 /* Fields */
 input[type="text"],
@@ -443,9 +435,7 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
-  color: #666;
-  border: 1px solid #ccc;
-  border-radius: 3px; }
+  color: #666; }
   input[type="text"]:focus,
   input[type="email"]:focus,
   input[type="url"]:focus,
@@ -465,6 +455,21 @@ textarea {
   padding-left: 3px;
   width: 100%; }
 
+/* Error 404 and Search Not Found */
+.error404 .search-form .search-field, .search-no-results .search-form .search-field {
+  display: block; }
+
+.error404 .search-form .search-submit, .search-no-results .search-form .search-submit {
+  display: none; }
+
+.error404 .search-form input, .search-no-results .search-form input {
+  display: block; }
+
+.error404 .search-form fieldset, .search-no-results .search-form fieldset {
+  margin: 0;
+  padding: 0;
+  border: none; }
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -481,13 +486,13 @@ a {
     outline: 0; }
 
 /* Search Bar */
-.search-form fieldset, .search-form .search-submit {
+.main-navigation .search-form fieldset, .main-navigation .search-form .search-submit {
   border: none;
   margin: 0;
   padding: 0;
   font-family: "Novecento", san-serif; }
 
-.search-form .search-submit {
+.main-navigation .search-form .search-submit {
   padding: 0 0.75rem;
   background: transparent;
   box-shadow: none;
@@ -497,7 +502,7 @@ a {
   text-shadow: none;
   outline: 0; }
 
-.search-form input.search-field {
+.main-navigation .search-form input.search-field {
   padding: 0;
   display: none;
   background: transparent;
@@ -939,11 +944,8 @@ a {
   text-transform: uppercase;
   background: #248A83;
   border: none;
-  border-radius: 0;
-  box-shadow: none;
   color: #FFF;
   font-size: 0.9rem;
-  text-shadow: none;
   transition: background 0.1s;
   padding: 0.75rem 1.5rem;
   line-height: 1rem; }
@@ -1189,7 +1191,10 @@ object {
       margin: 2rem 0 1rem 0;
       font-family: "Merriweather", serif;
       font-weight: lighter;
-      text-transform: none; }
+      text-transform: none;
+      transition: color 0.1s; }
+      .adventures li h3:hover, .adventures .large-adventure h3:hover {
+        color: #f0e4d1; }
     .adventures li .post-read-more, .adventures .large-adventure .post-read-more {
       padding: 0.75rem 1.5rem;
       line-height: 1rem;
@@ -1249,28 +1254,35 @@ a.more-adventures {
   a.more-adventures:hover {
     background: #14625d; }
 
-/* Journal Home Page and Find Us */
-.blog .site-content, .page-id-21 .site-content, .search-results .site-content {
+/* Journal Home, Find Us, Search, Error 404 */
+.blog .site-content, .page-id-21 .site-content, .search-results .site-content, .error404 .site-content, .search-no-results .site-content {
   max-width: 1120px;
   margin: auto;
   padding-top: 3rem;
   display: -ms-flexbox;
   display: flex; }
-  .blog .site-content .site-main, .page-id-21 .site-content .site-main, .search-results .site-content .site-main {
+  .blog .site-content .site-main, .page-id-21 .site-content .site-main, .search-results .site-content .site-main, .error404 .site-content .site-main, .search-no-results .site-content .site-main {
     padding-top: 2rem;
     padding-right: 4rem; }
-  .blog .site-content .post, .page-id-21 .site-content .post, .search-results .site-content .post {
+  .blog .site-content .post, .page-id-21 .site-content .post, .search-results .site-content .post, .error404 .site-content .post, .search-no-results .site-content .post {
     margin: 1rem 0 4rem 0; }
-  .blog .site-content #primary, .page-id-21 .site-content #primary, .search-results .site-content #primary {
+  .blog .site-content #primary, .page-id-21 .site-content #primary, .search-results .site-content #primary, .error404 .site-content #primary, .search-no-results .site-content #primary {
     -ms-flex-preferred-size: 72%;
         flex-basis: 72%;
     max-width: 72%; }
-  .blog .site-content #secondary, .page-id-21 .site-content #secondary, .search-results .site-content #secondary {
+  .blog .site-content #secondary, .page-id-21 .site-content #secondary, .search-results .site-content #secondary, .error404 .site-content #secondary, .search-no-results .site-content #secondary {
     -ms-flex-preferred-size: 28%;
         flex-basis: 28%;
     padding-left: 4rem; }
-    .blog .site-content #secondary h2, .page-id-21 .site-content #secondary h2, .search-results .site-content #secondary h2 {
+    .blog .site-content #secondary h2, .page-id-21 .site-content #secondary h2, .search-results .site-content #secondary h2, .error404 .site-content #secondary h2, .search-no-results .site-content #secondary h2 {
       margin: 0; }
+
+.search-results h1, .error404 h1, .page-id-21 h1, .search-no-results h1 {
+  margin: 0;
+  font-size: 2.25rem; }
+
+.search-results h1, .search-results h2, .error404 h1, .error404 h2, .page-id-21 h1, .page-id-21 h2, .search-no-results h1, .search-no-results h2 {
+  letter-spacing: 0.1rem; }
 
 /* About page */
 .page-id-25 h1 {
@@ -1297,9 +1309,6 @@ a.more-adventures {
     padding: 0 10rem; }
 
 /* Find Us */
-.page-id-21 article h1 {
-  font-size: 2.5rem; }
-
 .page-id-21 article h2 {
   color: #2f1339;
   font-size: 2.1rem; }
@@ -1322,30 +1331,35 @@ a.more-adventures {
   line-height: 1rem;
   background: #248A83;
   border: none;
-  border-radius: 0;
-  box-shadow: none;
   color: #FFF;
   font-size: 0.9rem;
-  text-shadow: none;
   transition: background 0.1s; }
   .page-id-21 .wpcf7-form .wpcf7-submit:hover {
     background: #14625d; }
 
 /* Search Page */
-.search-results .page-header {
+.search-results .page-header, .search-no-results .page-header {
   padding: 1rem 0;
   border-bottom: 1px solid #e1e1e1; }
 
-.search-results h1 {
-  margin: 0;
-  font-size: 2.25rem; }
-
-.search-results h1, .search-results h2 {
-  letter-spacing: 0.1rem; }
-
-.search-results .status-publish {
+.search-results .status-publish, .search-no-results .status-publish {
   margin: 3rem 0 5rem 0; }
-  .search-results .status-publish p {
+  .search-results .status-publish p, .search-no-results .status-publish p {
+    line-height: 1.75rem; }
+
+/* Error 404 Page */
+.error404 h2 {
+  margin: 1.5rem 0;
+  padding: 0;
+  color: #2f1339;
+  font-size: 1.5rem;
+  margin: 2rem 0; }
+
+.error404 .widget ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .error404 .widget ul li {
     line-height: 1.75rem; }
 
 /*--------------------------------------------------------------
