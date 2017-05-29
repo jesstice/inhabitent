@@ -212,18 +212,6 @@
 	font-size: 1.75rem;
 }
 
-.comment-form {
-	label {
-		color: $color__purple-brand;
-		@include font-accent;
-	}
-
-	.form-submit input {
-		@include font-accent;
-		@include submit-button;
-		@include button-sizing;
-	}
-}
 
 /* Social Media Icons */
 .social-media-icons {

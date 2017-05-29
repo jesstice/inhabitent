@@ -32,8 +32,6 @@ input[type="password"],
 input[type="search"],
 textarea {
 	color: #666;
-	// border: 1px solid #ccc;
-	// border-radius: 3px;
 
 	&:focus {
 		color: #111;
@@ -76,4 +74,48 @@ textarea {
       border: none;
     }
   }
+}
+
+
+// Comment form on single journal post
+.comment-form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	p {
+		width: 100%;
+	}
+
+	label {
+		color: $color__purple-brand;
+		@include font-accent;
+	}
+
+	.comment-form-comment {
+		width: 100%;
+	}
+
+	.comment-form-author, .comment-form-email {
+		width: 49%;
+    display: flex;
+    flex-direction: column;
+	}
+
+	.comment-form-url {
+		width: 100%;
+    display: flex;
+    flex-direction: column;
+	}
+
+	input, textarea {
+		background-color: #f4f4f4;
+		border: $solid_border;
+	}
+
+	.form-submit input {
+		@include font-accent;
+		@include submit-button;
+		@include button-sizing;
+	}
 }
