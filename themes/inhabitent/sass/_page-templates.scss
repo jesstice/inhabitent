@@ -357,26 +357,6 @@ a.more-adventures {
     }    
   }
 
-  .wpcf7-form {
-    
-    label, input {
-      @include font-accent;
-    }
-    
-    label {
-      color: $color__purple-brand;
-
-      .asterisk {
-        color: $color__orange-brand;
-      }
-    }
-
-    .wpcf7-submit {
-      @include button-sizing;
-      @include submit-button;
-      
-    }
-  }
 }
 
 /* Search Page */
