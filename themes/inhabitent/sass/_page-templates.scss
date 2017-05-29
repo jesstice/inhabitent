@@ -138,10 +138,9 @@
   background-color: #FFF;
   border: 1px solid #000;
   color: #000;
-  font-family: $font__accent;
+  @include font-accent;
   font-size: 0.9rem;
   text-align: center;
-  text-transform: uppercase;
 
   &:hover {
     background-color: $color__green-brand;
@@ -153,7 +152,88 @@
   .blog & {
     padding: 0.75rem 1.5rem;
   }
+}
 
+// Adventures section
+.adventures {
+  height: 33rem;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  color: #FFF;
+
+  // All adventure posts
+  li, .large-adventure {
+    padding: 1rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    line-height: normal;
+
+    h3 {
+      margin: 2rem 0 1rem 0;
+      font-family: $font__main;  
+      font-weight: lighter;
+      text-transform: none;
+    }
+
+    .post-read-more {
+      background: transparent;
+      border-color: #FFF;
+      color: #FFF;
+      transition: all 0.1s;
+    
+      &:hover {
+        background: $color__green-brand;
+        border-color: $color__green-brand;
+      }
+
+    }
+  }
+
+  .large-adventure {
+    // width: 50%;
+    flex-basis: 49%;
+    background-image: url('../../images/canoe-girl.jpg');
+    font-size: 2.75rem;
+  }
+
+  .side-adventures {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-basis: 49%;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    list-style: none;
+
+    .small-adventure {
+      // height: 50%;
+      // width: 50%;
+      height: 48%;
+      flex-basis: 48%;
+      font-size: 1.4rem;
+    }
+  }
+
+  .medium-adventure {
+    // height: 50%;
+    // width: 100%;
+    flex-basis: 100%;
+    height: 48%;
+    background-image: url('../../images/beach-bonfire.jpg');
+    font-size: 2.25rem;
+  }
+
+  .mountain {
+    background-image: url('../../images/mountain-hikers.jpg');    
+  }
+
+  .star-gazing {
+    background-image: url('../../images/night-sky.jpg');    
+  }
 }
 
 /* Journal Home Page and Find Us */

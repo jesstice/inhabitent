@@ -6,9 +6,7 @@
  */
 ?>
 
-<?php
-
-get_header(); ?>
+<?php get_header(); ?>
 
 <div class="home-banner">
   <img src="<?php echo get_stylesheet_directory_uri() ?>/images/inhabitent-logo-full.svg" alt="inhabitent logo">
@@ -17,7 +15,6 @@ get_header(); ?>
 <!--Shop Products Section-->
 <section class="container">
   <h2>Shop Stuff</h2>
-  
   <?php
     $product_types = get_terms(array (
       'taxonomy'  => 'product-type',
@@ -71,7 +68,26 @@ get_header(); ?>
 <!--Adventures Section-->
 <section class="container">
   <h2>Latest Adventures</h2>
-  <p>To be added....</p>
+  <div class="adventures">
+    <div class="large-adventure">
+      <h3>Getting Back to Nature in a Canoe</h3>
+      <a class="post-read-more" href="#">Read More</a>
+    </div>
+    <ul class="side-adventures">
+      <li class="medium-adventure">
+        <h3>At Night with Friends at the Beach</h3>
+        <a class="post-read-more" href="#">Read More</a>
+      </li>
+      <li class="small-adventure mountain">
+        <h3>Taking in the View at Big Mountain</h3>
+        <a class="post-read-more" href="#">Read More</a>
+      </li>
+      <li class="small-adventure star-gazing">
+        <h3>Star-Gazing at the Night Sky</h3>
+        <a class="post-read-more" href="#">Read More</a>
+      </li>
+    </ul>
+  </div>
 </section>
 
 <?php get_footer(); ?>
