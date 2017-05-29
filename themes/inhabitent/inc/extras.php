@@ -59,7 +59,7 @@ function inhabitent_add_about_css() {
 		return;
 	} else {
 		$hero_image = CFS()->get('banner_image');
-		$css = ".about-hero { background: url('$hero_image') center / cover no-repeat; }";
+		$css = ".about-hero { background: linear-gradient( rgba(36, 36, 36, 0.3), rgba(36, 36, 36, 0.3)), url('$hero_image') center / cover no-repeat; }";
 	}
 	wp_add_inline_style( 'inhabitent-style', $css );
 }

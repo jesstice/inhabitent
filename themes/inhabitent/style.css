@@ -681,10 +681,10 @@ a {
 # Sidebar
 --------------------------------------------------------------*/
 .widget-area {
-  padding-top: 3rem;
+  padding-top: 1rem;
   border-left: 1px solid rgba(161, 161, 161, 0.5); }
   .widget-area aside {
-    margin-top: 4rem; }
+    margin-top: 3rem; }
   .widget-area h2 {
     color: #2f1339;
     font-size: 1.5rem;
@@ -812,22 +812,23 @@ a {
 
 /* Single post */
 .single-post .site-content {
-  width: 100%;
-  padding-left: 5rem;
-  padding-right: 5rem;
+  max-width: 1120px;
+  margin: auto;
+  padding-top: 3rem;
   display: -ms-flexbox;
   display: flex; }
 
 .single-post .content-area {
-  padding-top: 3rem;
+  padding-top: 2rem;
   padding-right: 4rem; }
 
 .single-post .post {
-  margin-top: 3rem; }
+  margin-top: 1rem; }
 
 .single-post #primary {
-  -ms-flex-preferred-size: 73%;
-      flex-basis: 73%; }
+  -ms-flex-preferred-size: 72%;
+      flex-basis: 72%;
+  max-width: 72%; }
 
 .single-post h1.entry-title {
   margin: 0;
@@ -835,8 +836,8 @@ a {
   line-height: normal; }
 
 .single-post #secondary {
-  -ms-flex-preferred-size: 27%;
-      flex-basis: 27%;
+  -ms-flex-preferred-size: 28%;
+      flex-basis: 28%;
   padding-left: 4rem; }
   .single-post #secondary h2 {
     margin: 0;
@@ -932,6 +933,22 @@ a {
   color: #2f1339;
   font-family: "Novecento", san-serif;
   text-transform: uppercase; }
+
+.comment-form .form-submit input {
+  font-family: "Novecento", san-serif;
+  text-transform: uppercase;
+  background: #248A83;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  color: #FFF;
+  font-size: 0.9rem;
+  text-shadow: none;
+  transition: background 0.1s;
+  padding: 0.75rem 1.5rem;
+  line-height: 1rem; }
+  .comment-form .form-submit input:hover {
+    background: #14625d; }
 
 /* Social Media Icons */
 .social-media-icons {
@@ -1233,25 +1250,26 @@ a.more-adventures {
     background: #14625d; }
 
 /* Journal Home Page and Find Us */
-.blog .site-content, .page-id-21 .site-content {
+.blog .site-content, .page-id-21 .site-content, .search-results .site-content {
   max-width: 1120px;
   margin: auto;
+  padding-top: 3rem;
   display: -ms-flexbox;
   display: flex; }
-  .blog .site-content .site-main, .page-id-21 .site-content .site-main {
-    padding-top: 3rem;
+  .blog .site-content .site-main, .page-id-21 .site-content .site-main, .search-results .site-content .site-main {
+    padding-top: 2rem;
     padding-right: 4rem; }
-  .blog .site-content .post, .page-id-21 .site-content .post {
-    margin: 3rem 0rem 4rem 0rem; }
-  .blog .site-content #primary, .page-id-21 .site-content #primary {
+  .blog .site-content .post, .page-id-21 .site-content .post, .search-results .site-content .post {
+    margin: 1rem 0 4rem 0; }
+  .blog .site-content #primary, .page-id-21 .site-content #primary, .search-results .site-content #primary {
     -ms-flex-preferred-size: 72%;
         flex-basis: 72%;
     max-width: 72%; }
-  .blog .site-content #secondary, .page-id-21 .site-content #secondary {
+  .blog .site-content #secondary, .page-id-21 .site-content #secondary, .search-results .site-content #secondary {
     -ms-flex-preferred-size: 28%;
         flex-basis: 28%;
     padding-left: 4rem; }
-    .blog .site-content #secondary h2, .page-id-21 .site-content #secondary h2 {
+    .blog .site-content #secondary h2, .page-id-21 .site-content #secondary h2, .search-results .site-content #secondary h2 {
       margin: 0; }
 
 /* About page */
@@ -1312,6 +1330,23 @@ a.more-adventures {
   transition: background 0.1s; }
   .page-id-21 .wpcf7-form .wpcf7-submit:hover {
     background: #14625d; }
+
+/* Search Page */
+.search-results .page-header {
+  padding: 1rem 0;
+  border-bottom: 1px solid #e1e1e1; }
+
+.search-results h1 {
+  margin: 0;
+  font-size: 2.25rem; }
+
+.search-results h1, .search-results h2 {
+  letter-spacing: 0.1rem; }
+
+.search-results .status-publish {
+  margin: 3rem 0 5rem 0; }
+  .search-results .status-publish p {
+    line-height: 1.75rem; }
 
 /*--------------------------------------------------------------
 # Product Page Templates
