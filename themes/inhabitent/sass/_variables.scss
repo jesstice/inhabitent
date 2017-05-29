@@ -14,14 +14,12 @@ $color__background-ins: #fff9c0;
 $color__border-abbr: #666;
 $color__grey-border: rgba(161, 161, 161, 0.5);
 
-$solid_border: 1px solid #e1e1e1;
-$dashed_border: 1px dashed #c8c8c8;
-
 $color__link: #248A83;
 $color__link-visited: #248A83;
 $color__link-hover: #2f1339;
 
 $color__green-brand: #248A83;
+$color__green-hover: #14625d;
 $color__purple-brand: #2f1339;
 $color__light-grey: #a1a1a1;
 $color__orange-brand: #d99054;
@@ -34,3 +32,10 @@ $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
+
+// Border
+$solid_border: 1px solid #e1e1e1;
+$dashed_border: 1px dashed #c8c8c8;
+
+//Background
+$linear-gradient: linear-gradient( rgba(36, 36, 36, 0.3), rgba(36, 36, 36, 0.3));

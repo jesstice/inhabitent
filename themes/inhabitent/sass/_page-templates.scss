@@ -8,17 +8,25 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('../../images/home-hero.jpg');
+  background-image: $linear-gradient, url('../../images/home-hero.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .home {
   h2 {
+    margin-bottom: 4rem;
+    color: $color__purple-brand;
     font-size: 2.25rem;
     font-weight: normal;
     text-align: center;
   }
+
+  section {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
 }
 
 .shop-categories {
@@ -62,9 +70,8 @@
       color: #FFF;
       transition: background 0.1s;
       
-
       &:hover {
-        background: #14625d;
+        background: $color__green-hover;
       }
 
       h3 {
@@ -80,6 +87,7 @@
 .home-journal-display {
   h3 {
     margin-top: 0;
+    margin-bottom: 1rem;
     color: $color__green-brand;
     font-size: 1.3rem;
     letter-spacing: .1rem;
@@ -113,16 +121,19 @@
     width: 32%;
     display: flex;
     flex-direction: column;
-
+    border: $solid_border;
+    
     .wp-post-image {
       max-height: 240px;
       overflow: hidden;
-      // height: auto;
       width: 100%;
+      border-bottom: $solid_border;
+      border-width: 5px;
     }
 
     .post-display-data {
       height: 40%;
+      padding: 0.75rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -134,7 +145,7 @@
 .post-read-more {
   margin: 0;
   width: 9rem;
-  padding: 0.5rem 1rem;
+  @include button-sizing;
   background-color: #FFF;
   border: 1px solid #000;
   color: #000;
@@ -150,7 +161,7 @@
   }
 
   .blog & {
-    padding: 0.75rem 1.5rem;
+    @include button-sizing;
   }
 }
 
@@ -165,10 +176,7 @@
 
   // All adventure posts
   li, .large-adventure {
-    padding: 1rem;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    padding: 1.5rem;
     line-height: normal;
 
     h3 {
@@ -179,6 +187,7 @@
     }
 
     .post-read-more {
+      @include button-sizing;
       background: transparent;
       border-color: #FFF;
       color: #FFF;
@@ -193,9 +202,9 @@
   }
 
   .large-adventure {
-    // width: 50%;
     flex-basis: 49%;
-    background-image: url('../../images/canoe-girl.jpg');
+    background: $linear-gradient,
+    url('../../images/canoe-girl.jpg') 50% 50% / 58rem no-repeat;
     font-size: 2.75rem;
   }
 
@@ -210,8 +219,6 @@
     list-style: none;
 
     .small-adventure {
-      // height: 50%;
-      // width: 50%;
       height: 48%;
       flex-basis: 48%;
       font-size: 1.4rem;
@@ -219,20 +226,41 @@
   }
 
   .medium-adventure {
-    // height: 50%;
-    // width: 100%;
     flex-basis: 100%;
     height: 48%;
-    background-image: url('../../images/beach-bonfire.jpg');
+    background: $linear-gradient, url('../../images/beach-bonfire.jpg') 50% 70% / 40rem no-repeat;
     font-size: 2.25rem;
   }
 
   .mountain {
-    background-image: url('../../images/mountain-hikers.jpg');    
+    background: 
+      $linear-gradient,
+      url('../../images/mountain-hikers.jpg') 50% 70% / 40rem no-repeat;    
   }
 
   .star-gazing {
-    background-image: url('../../images/night-sky.jpg');    
+    background: 
+      $linear-gradient,
+      url('../../images/night-sky.jpg') 50% 70% / 40rem no-repeat;    
+  }
+}
+
+a.more-adventures {
+  margin: 1rem 0;
+  @include button-sizing;
+  display: inline-block;
+  background: $color__green-brand;
+  color: #FFF;
+  @include font-accent;
+  font-size: 1.15rem;
+  transition: background 0.1s;
+  
+  // p {
+  //   display: inline;
+  // }
+
+  &:hover {
+    background: $color__green-hover;
   }
 }
 
@@ -282,7 +310,6 @@
   align-items: center;
   justify-content: center;
   color: #FFF;
-  // background: center / cover no-repeat;
 }
 
 .about-content {
@@ -335,7 +362,7 @@
     }
 
     .wpcf7-submit {
-      padding: 0.75rem 1.5rem;
+      @include button-sizing;
       background: $color__green-brand;
       border: none;
       border-radius: 0;
@@ -346,7 +373,7 @@
       transition: background 0.1s;
       
       &:hover {
-        background: #14625d;
+        background: $color__green-hover;
       }
 
     }

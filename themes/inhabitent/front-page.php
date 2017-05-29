@@ -88,6 +88,7 @@
       </li>
     </ul>
   </div>
+  <a class="more-adventures" href="#">More Adventures</a>
 </section>
 
 <?php get_footer(); ?>
