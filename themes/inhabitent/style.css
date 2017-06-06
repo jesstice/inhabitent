@@ -1368,6 +1368,24 @@ a.more-adventures {
   height: 18rem;
   width: 100%; }
 
+/* Adventure Pages */
+.single-adventure .adventure-header img {
+  height: auto;
+  width: 100%; }
+
+.single-adventure .adventure-content {
+  padding: 3rem 10rem; }
+
+.single-adventure .adventure-title {
+  margin: 0;
+  font-size: 2.5rem;
+  letter-spacing: 0.15rem; }
+
+.single-adventure .author {
+  text-transform: uppercase;
+  font-family: "Novecento", san-serif;
+  font-size: 1.25rem; }
+
 /* Search Page */
 .search-results .page-header, .search-no-results .page-header {
   padding: 1rem 0;

@@ -356,6 +356,36 @@ a.more-adventures {
       width: 100%;
     }    
   }
+}
+
+/* Adventure Pages */
+.single-adventure {
+  .adventure-header {
+    // height: 100vh;
+    // overflow: hidden;
+
+    img {
+      height: auto;
+      // min-height: 100%;
+      width: 100%;
+    }
+  }
+
+  .adventure-content {
+    padding: 3rem 10rem;
+  }
+
+  .adventure-title {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 0.15rem;
+  }
+
+  .author {
+    text-transform: uppercase;
+    font-family: $font__accent;
+    font-size: 1.25rem;
+  }
 
 }
 
