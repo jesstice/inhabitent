@@ -165,6 +165,60 @@
   }
 }
 
+.adventure-display {
+  height: 33rem;
+  margin: 0;
+  padding: 0;
+  // display: flex;
+  list-style: none;
+
+  .adventure-display-post {
+    position: relative;
+
+    img {
+      height: auto;
+      min-height: 100%;
+      min-width: 100%;
+      width: auto;
+      position: absolute;
+    }
+
+    .adventure-data {
+      top: 0;
+      position: absolute;
+
+      h3 {
+        color: white;
+      }
+    }
+
+    &:first-child {
+      height: 100%;
+      width: 50%;
+      // background: $linear-gradient,
+      // url('../../images/canoe-girl.jpg') 50% 50% / 58rem no-repeat;
+
+      img {
+        left: -7rem;
+      }
+    }
+
+    &:nth-child(2) {
+      width: 50%;
+    }
+
+    &:nth-child(3) {
+      width: 25%;
+    }
+
+    &:last-child {
+      width: 25%;
+    }
+
+  }
+
+}
+
 // Adventures section
 .adventures {
   height: 33rem;
@@ -181,7 +235,7 @@
 
     h3 {
       margin: 2rem 0 1rem 0;
-      font-family: $font__main;  
+      font-family: $font__main;
       font-weight: normal;
       text-transform: none;
       transition: color 0.1s;

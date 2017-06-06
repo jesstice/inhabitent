@@ -68,7 +68,27 @@
 <!--Adventures Section-->
 <section class="container">
   <h2>Latest Adventures</h2>
-  <div class="adventures">
+
+  <ul class="adventure-display">
+    <?php
+      $args = array( 'post_type' => 'adventure', 'order'=> 'ASC', 'posts_per_page' => 4);
+      $myposts = get_posts( $args );
+      foreach ( $myposts as $post ) : setup_postdata( $post ); 
+        $img_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID), 'large');
+      ?>
+
+        <?php echo '<li class="adventure-display-post" style="background: linear-gradient( rgba(36, 36, 36, 0.3), rgba(36, 36, 36, 0.3)), url('. $img_url .')">'; ?>
+
+          <div class="adventure-data">
+            <a href="<?php the_permalink() ?>"><h3><?php the_title(); ?></h3></a>
+            <a class="post-read-more" href="<?php the_permalink() ?>">Read Entry</a>
+          </div>
+        </li>
+    <?php endforeach;
+      wp_reset_postdata(); ?>
+    </ul>
+
+  <!--<div class="adventures">
     <div class="large-adventure">
       <h3>Getting Back to Nature in a Canoe</h3>
       <a class="post-read-more" href="#">Read More</a>
@@ -87,7 +107,8 @@
         <a class="post-read-more" href="#">Read More</a>
       </li>
     </ul>
-  </div>
+  </div>-->
+
   <a class="more-adventures" href="#">More Adventures</a>
 </section>
 

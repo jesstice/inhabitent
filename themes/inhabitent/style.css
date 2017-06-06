@@ -1226,6 +1226,36 @@ object {
     padding: 0.75rem 1.5rem;
     line-height: 1rem; }
 
+.adventure-display {
+  height: 33rem;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .adventure-display .adventure-display-post {
+    position: relative; }
+    .adventure-display .adventure-display-post img {
+      height: auto;
+      min-height: 100%;
+      min-width: 100%;
+      width: auto;
+      position: absolute; }
+    .adventure-display .adventure-display-post .adventure-data {
+      top: 0;
+      position: absolute; }
+      .adventure-display .adventure-display-post .adventure-data h3 {
+        color: white; }
+    .adventure-display .adventure-display-post:first-child {
+      height: 100%;
+      width: 50%; }
+      .adventure-display .adventure-display-post:first-child img {
+        left: -7rem; }
+    .adventure-display .adventure-display-post:nth-child(2) {
+      width: 50%; }
+    .adventure-display .adventure-display-post:nth-child(3) {
+      width: 25%; }
+    .adventure-display .adventure-display-post:last-child {
+      width: 25%; }
+
 .adventures {
   height: 33rem;
   margin: 0;
