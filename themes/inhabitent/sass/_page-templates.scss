@@ -291,7 +291,7 @@ a.more-adventures {
 }
 
 // Style like pages
-.search-results, .error404, .page-id-21, .search-no-results {
+.search-results, .error404, .page-id-21, .search-no-results, .archive {
   h1 {
     margin: 0;
     font-size: 2.25rem;
@@ -299,6 +299,15 @@ a.more-adventures {
 
   h1, h2 {
     letter-spacing: 0.1rem;
+  }
+}
+
+/* Archive pages */
+.archive {
+  .page-header {
+    margin-bottom: 3rem;
+    padding: 1rem 0;
+    border-bottom: $solid_border;
   }
 }
 

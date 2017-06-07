@@ -1321,12 +1321,18 @@ a.more-adventures {
     .blog .site-content #secondary h2, .page-id-21 .site-content #secondary h2, .search-results .site-content #secondary h2, .error404 .site-content #secondary h2, .search-no-results .site-content #secondary h2, .archive .site-content #secondary h2 {
       margin: 0; }
 
-.search-results h1, .error404 h1, .page-id-21 h1, .search-no-results h1 {
+.search-results h1, .error404 h1, .page-id-21 h1, .search-no-results h1, .archive h1 {
   margin: 0;
   font-size: 2.25rem; }
 
-.search-results h1, .search-results h2, .error404 h1, .error404 h2, .page-id-21 h1, .page-id-21 h2, .search-no-results h1, .search-no-results h2 {
+.search-results h1, .search-results h2, .error404 h1, .error404 h2, .page-id-21 h1, .page-id-21 h2, .search-no-results h1, .search-no-results h2, .archive h1, .archive h2 {
   letter-spacing: 0.1rem; }
+
+/* Archive pages */
+.archive .page-header {
+  margin-bottom: 3rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid #e1e1e1; }
 
 /* About page */
 .page-id-25 h1 {
