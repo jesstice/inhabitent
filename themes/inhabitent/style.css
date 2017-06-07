@@ -802,6 +802,7 @@ a {
 # Footer
 --------------------------------------------------------------*/
 .site-footer {
+  clear: both;
   padding: 1rem;
   background-image: url("../../images/dark-wood.png"); }
   .site-footer .container {
@@ -1232,94 +1233,56 @@ object {
   padding: 0;
   list-style: none; }
   .adventure-display .adventure-display-post {
-    position: relative; }
-    .adventure-display .adventure-display-post img {
-      height: auto;
-      min-height: 100%;
-      min-width: 100%;
-      width: auto;
-      position: absolute; }
+    padding: 1rem;
+    position: relative;
+    display: inline-block; }
     .adventure-display .adventure-display-post .adventure-data {
       top: 0;
+      margin: 0.5rem;
       position: absolute; }
       .adventure-display .adventure-display-post .adventure-data h3 {
-        color: white; }
+        color: white;
+        margin: 2rem 0 1rem 0;
+        font-family: "Merriweather", serif;
+        font-weight: normal;
+        text-transform: none;
+        transition: color 0.1s; }
     .adventure-display .adventure-display-post:first-child {
       height: 100%;
-      width: 50%; }
-      .adventure-display .adventure-display-post:first-child img {
-        left: -7rem; }
+      width: 49%;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: 58rem;
+      font-size: 2.75rem; }
     .adventure-display .adventure-display-post:nth-child(2) {
-      width: 50%; }
-    .adventure-display .adventure-display-post:nth-child(3) {
-      width: 25%; }
+      height: 48%;
+      width: 49%;
+      float: right;
+      background-position: 50% 70%;
+      background-repeat: no-repeat;
+      background-size: 40rem;
+      font-size: 2.25rem; }
+    .adventure-display .adventure-display-post:nth-child(3), .adventure-display .adventure-display-post:last-child {
+      height: 48%;
+      width: 23.5%;
+      top: -259px;
+      float: right;
+      background-position: 50% 70%;
+      background-repeat: no-repeat;
+      background-size: 40rem;
+      font-size: 1.4rem; }
     .adventure-display .adventure-display-post:last-child {
-      width: 25%; }
-
-.adventures {
-  height: 33rem;
-  margin: 0;
-  padding: 0;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  color: #FFF; }
-  .adventures li, .adventures .large-adventure {
-    padding: 1.5rem;
-    line-height: normal; }
-    .adventures li h3, .adventures .large-adventure h3 {
-      margin: 2rem 0 1rem 0;
-      font-family: "Merriweather", serif;
-      font-weight: normal;
-      text-transform: none;
-      transition: color 0.1s; }
-      .adventures li h3:hover, .adventures .large-adventure h3:hover {
-        color: #f0e4d1; }
-    .adventures li .post-read-more, .adventures .large-adventure .post-read-more {
+      left: -23px; }
+    .adventure-display .adventure-display-post .post-read-more {
       padding: 0.75rem 1.5rem;
       line-height: 1rem;
       background: transparent;
       border-color: #FFF;
       color: #FFF;
       transition: all 0.1s; }
-      .adventures li .post-read-more:hover, .adventures .large-adventure .post-read-more:hover {
+      .adventure-display .adventure-display-post .post-read-more:hover {
         background: #248A83;
         border-color: #248A83; }
-  .adventures .large-adventure {
-    -ms-flex-preferred-size: 49%;
-        flex-basis: 49%;
-    background: linear-gradient(rgba(36, 36, 36, 0.3), rgba(36, 36, 36, 0.3)), url("../../images/canoe-girl.jpg") 50% 50%/58rem no-repeat;
-    font-size: 2.75rem; }
-  .adventures .side-adventures {
-    margin: 0;
-    padding: 0;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-line-pack: justify;
-        align-content: space-between;
-    -ms-flex-preferred-size: 49%;
-        flex-basis: 49%;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
-    list-style: none; }
-    .adventures .side-adventures .small-adventure {
-      height: 48%;
-      -ms-flex-preferred-size: 48%;
-          flex-basis: 48%;
-      font-size: 1.4rem; }
-  .adventures .medium-adventure {
-    height: 48%;
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-    background: linear-gradient(rgba(36, 36, 36, 0.3), rgba(36, 36, 36, 0.3)), url("../../images/beach-bonfire.jpg") 50% 70%/40rem no-repeat;
-    font-size: 2.25rem; }
-  .adventures .mountain {
-    background: linear-gradient(rgba(36, 36, 36, 0.3), rgba(36, 36, 36, 0.3)), url("../../images/mountain-hikers.jpg") 50% 70%/40rem no-repeat; }
-  .adventures .star-gazing {
-    background: linear-gradient(rgba(36, 36, 36, 0.3), rgba(36, 36, 36, 0.3)), url("../../images/night-sky.jpg") 50% 70%/40rem no-repeat; }
 
 a.more-adventures {
   margin: 1rem 0;

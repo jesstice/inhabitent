@@ -77,7 +77,7 @@
         $img_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID), 'large');
       ?>
 
-        <?php echo '<li class="adventure-display-post" style="background: linear-gradient( rgba(36, 36, 36, 0.3), rgba(36, 36, 36, 0.3)), url('. $img_url .')">'; ?>
+        <?php echo '<li class="adventure-display-post" style="background-image: linear-gradient( rgba(36, 36, 36, 0.3), rgba(36, 36, 36, 0.3)), url('. $img_url .')">'; ?>
 
           <div class="adventure-data">
             <a href="<?php the_permalink() ?>"><h3><?php the_title(); ?></h3></a>
@@ -87,27 +87,6 @@
     <?php endforeach;
       wp_reset_postdata(); ?>
     </ul>
-
-  <!--<div class="adventures">
-    <div class="large-adventure">
-      <h3>Getting Back to Nature in a Canoe</h3>
-      <a class="post-read-more" href="#">Read More</a>
-    </div>
-    <ul class="side-adventures">
-      <li class="medium-adventure">
-        <h3>At Night with Friends at the Beach</h3>
-        <a class="post-read-more" href="#">Read More</a>
-      </li>
-      <li class="small-adventure mountain">
-        <h3>Taking in the View at Big Mountain</h3>
-        <a class="post-read-more" href="#">Read More</a>
-      </li>
-      <li class="small-adventure star-gazing">
-        <h3>Star-Gazing at the Night Sky</h3>
-        <a class="post-read-more" href="#">Read More</a>
-      </li>
-    </ul>
-  </div>-->
 
   <a class="more-adventures" href="#">More Adventures</a>
 </section>
