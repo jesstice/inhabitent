@@ -259,7 +259,7 @@ a.more-adventures {
 
 /* Journal Home, Find Us, Search, Error 404 */
 // Style pages with sidebar
-.blog, .page-id-21, .search-results, .error404, .search-no-results, .archive {
+.blog, .page-id-21, .search-results, .error404, .search-no-results, .date, .tag, .category {
 	.site-content {
 		@include container;
     padding-top: 3rem;
@@ -291,7 +291,7 @@ a.more-adventures {
 }
 
 // Style like pages
-.search-results, .error404, .page-id-21, .search-no-results, .archive {
+.search-results, .error404, .page-id-21, .search-no-results, .date, .tag, .category {
   h1 {
     margin: 0;
     font-size: 2.25rem;
@@ -303,7 +303,7 @@ a.more-adventures {
 }
 
 /* Archive pages */
-.archive {
+.date, .tag, .category {
   .page-header {
     margin-bottom: 3rem;
     padding: 1rem 0;

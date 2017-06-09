@@ -1,6 +1,8 @@
+<?php $hero_header = is_front_page() || is_page_template('about.php') || is_singular('adventure') ?>
+
 <form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
 	<fieldset>
-		<button class="search-submit">
+		<button class="<?php echo $hero_header ? 'search-submit search-submit-hero' : 'search-submit' ?>">
 			<span class="icon-search" aria-hidden="true">
 				<i class="fa fa-search"></i>
 			</span>

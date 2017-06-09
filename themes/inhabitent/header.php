@@ -14,7 +14,9 @@
 		<div id="page" class="hfeed site">
 			<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
 
-			<header id="masthead" class="site-header" role="banner">
+			<?php $hero_header = is_front_page() || is_page_template('about.php') || is_singular('adventure') ?>
+
+			<header id="masthead" class="<?php echo $hero_header ? 'site-header site-header-hero' : 'site-header' ?>" role="banner">
 				<div class="container">
 					<div class="site-branding">
 						<h1 class="site-title screen-reader-text">
@@ -23,10 +25,10 @@
 
 					<nav id="site-navigation" class="main-navigation" role="navigation">
 						<a href="<?php echo get_home_url(); ?>">
-							<div class="nav-menu-logo"></div>
+							<div class="<?php echo $hero_header ? 'nav-menu-logo nav-menu-logo-hero' : 'nav-menu-logo' ?>"></div>
 						</a>
 						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
-						<div class="nav-menu-search">
+						<div class="<?php echo $hero_header ? 'nav-menu-search nav-menu-search-hero' : 'nav-menu-search' ?>">
 							<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 							<?php get_search_form(); ?>
 						</div>

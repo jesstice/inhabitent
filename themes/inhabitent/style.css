@@ -571,6 +571,18 @@ a {
   text-shadow: none;
   outline: 0; }
 
+.main-navigation .search-form .search-submit-hero {
+  color: white; }
+
+.main-navigation .search-form ::-webkit-input-placeholder {
+  color: white; }
+
+.main-navigation .search-form :-ms-input-placeholder {
+  color: white; }
+
+.main-navigation .search-form ::placeholder {
+  color: white; }
+
 .main-navigation .search-form input.search-field {
   padding: 0;
   display: none;
@@ -581,9 +593,15 @@ a {
   text-transform: uppercase;
   transition: width 1s; }
 
+.main-navigation .link-hero {
+  color: white; }
+
 .nav-menu-search {
   display: -ms-flexbox;
   display: flex; }
+
+.nav-menu-search-hero #primary-menu li a {
+  color: white; }
 
 /* Menus */
 .site-header {
@@ -592,6 +610,12 @@ a {
   background-color: rgba(255, 255, 255, 0.6);
   border-bottom: 1px solid rgba(161, 161, 161, 0.5);
   z-index: 999; }
+
+.site-header-hero {
+  position: absolute;
+  width: 100%;
+  background-color: transparent;
+  border: none; }
 
 .main-navigation {
   height: 3rem;
@@ -610,6 +634,12 @@ a {
     height: 2rem;
     width: 4rem;
     background-image: url("../../images/inhabitent-logo-tent.svg");
+    background-repeat: no-repeat;
+    background-size: contain; }
+  .main-navigation .nav-menu-logo-hero {
+    height: 2rem;
+    width: 4rem;
+    background-image: url("../../images/inhabitent-logo-tent-white.svg");
     background-repeat: no-repeat;
     background-size: contain; }
   .main-navigation #primary-menu {
@@ -1299,37 +1329,37 @@ a.more-adventures {
     background: #14625d; }
 
 /* Journal Home, Find Us, Search, Error 404 */
-.blog .site-content, .page-id-21 .site-content, .search-results .site-content, .error404 .site-content, .search-no-results .site-content, .archive .site-content {
+.blog .site-content, .page-id-21 .site-content, .search-results .site-content, .error404 .site-content, .search-no-results .site-content, .date .site-content, .tag .site-content, .category .site-content {
   max-width: 1120px;
   margin: auto;
   padding-top: 3rem;
   display: -ms-flexbox;
   display: flex; }
-  .blog .site-content .site-main, .page-id-21 .site-content .site-main, .search-results .site-content .site-main, .error404 .site-content .site-main, .search-no-results .site-content .site-main, .archive .site-content .site-main {
+  .blog .site-content .site-main, .page-id-21 .site-content .site-main, .search-results .site-content .site-main, .error404 .site-content .site-main, .search-no-results .site-content .site-main, .date .site-content .site-main, .tag .site-content .site-main, .category .site-content .site-main {
     padding-top: 2rem;
     padding-right: 4rem; }
-  .blog .site-content .post, .page-id-21 .site-content .post, .search-results .site-content .post, .error404 .site-content .post, .search-no-results .site-content .post, .archive .site-content .post {
+  .blog .site-content .post, .page-id-21 .site-content .post, .search-results .site-content .post, .error404 .site-content .post, .search-no-results .site-content .post, .date .site-content .post, .tag .site-content .post, .category .site-content .post {
     margin: 1rem 0 4rem 0; }
-  .blog .site-content #primary, .page-id-21 .site-content #primary, .search-results .site-content #primary, .error404 .site-content #primary, .search-no-results .site-content #primary, .archive .site-content #primary {
+  .blog .site-content #primary, .page-id-21 .site-content #primary, .search-results .site-content #primary, .error404 .site-content #primary, .search-no-results .site-content #primary, .date .site-content #primary, .tag .site-content #primary, .category .site-content #primary {
     -ms-flex-preferred-size: 72%;
         flex-basis: 72%;
     max-width: 72%; }
-  .blog .site-content #secondary, .page-id-21 .site-content #secondary, .search-results .site-content #secondary, .error404 .site-content #secondary, .search-no-results .site-content #secondary, .archive .site-content #secondary {
+  .blog .site-content #secondary, .page-id-21 .site-content #secondary, .search-results .site-content #secondary, .error404 .site-content #secondary, .search-no-results .site-content #secondary, .date .site-content #secondary, .tag .site-content #secondary, .category .site-content #secondary {
     -ms-flex-preferred-size: 28%;
         flex-basis: 28%;
     padding-left: 4rem; }
-    .blog .site-content #secondary h2, .page-id-21 .site-content #secondary h2, .search-results .site-content #secondary h2, .error404 .site-content #secondary h2, .search-no-results .site-content #secondary h2, .archive .site-content #secondary h2 {
+    .blog .site-content #secondary h2, .page-id-21 .site-content #secondary h2, .search-results .site-content #secondary h2, .error404 .site-content #secondary h2, .search-no-results .site-content #secondary h2, .date .site-content #secondary h2, .tag .site-content #secondary h2, .category .site-content #secondary h2 {
       margin: 0; }
 
-.search-results h1, .error404 h1, .page-id-21 h1, .search-no-results h1, .archive h1 {
+.search-results h1, .error404 h1, .page-id-21 h1, .search-no-results h1, .date h1, .tag h1, .category h1 {
   margin: 0;
   font-size: 2.25rem; }
 
-.search-results h1, .search-results h2, .error404 h1, .error404 h2, .page-id-21 h1, .page-id-21 h2, .search-no-results h1, .search-no-results h2, .archive h1, .archive h2 {
+.search-results h1, .search-results h2, .error404 h1, .error404 h2, .page-id-21 h1, .page-id-21 h2, .search-no-results h1, .search-no-results h2, .date h1, .date h2, .tag h1, .tag h2, .category h1, .category h2 {
   letter-spacing: 0.1rem; }
 
 /* Archive pages */
-.archive .page-header {
+.date .page-header, .tag .page-header, .category .page-header {
   margin-bottom: 3rem;
   padding: 1rem 0;
   border-bottom: 1px solid #e1e1e1; }

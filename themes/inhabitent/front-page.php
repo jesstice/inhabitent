@@ -13,7 +13,7 @@
 </div>
 
 <!--Shop Products Section-->
-<section class="container">
+<section class="home-shop container">
   <h2>Shop Stuff</h2>
   <?php
     $product_types = get_terms(array (

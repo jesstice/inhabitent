@@ -46,6 +46,14 @@ a {
 			outline: 0;
 		}
 
+		.search-submit-hero {
+			color: white;
+		}
+
+		::placeholder {
+			color: white;
+		}
+
 		// Search Field
 		input.search-field {
 			padding: 0;
@@ -58,11 +66,25 @@ a {
 			transition: width 1s;
 		}
 	}
+
+	.link-hero {
+		color: white;
+	}
+
 }
 
 .nav-menu-search {
 	display: flex;
 }
+
+.nav-menu-search-hero {
+	#primary-menu li a {
+		color: white;
+	}
+}
+
+
+// <header id="masthead" class="site-header<?php echo  $hero_header ? ' site-header-hero' : '' ?>" 
 
 /* Menus */
 .site-header {
@@ -71,6 +93,13 @@ a {
 	background-color: rgba(255, 255, 255, 0.6);
 	border-bottom: 1px solid $color__grey-border;
 	z-index: 999;
+}
+
+.site-header-hero {
+	position: absolute;
+	width: 100%;
+	background-color: transparent;
+	border: none;
 }
 
 .main-navigation {
@@ -90,6 +119,14 @@ a {
 		height: 2rem;
 		width: 4rem;
 		background-image: url('../../images/inhabitent-logo-tent.svg');
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+
+	.nav-menu-logo-hero {
+		height: 2rem;
+		width: 4rem;
+		background-image: url('../../images/inhabitent-logo-tent-white.svg');
 		background-repeat: no-repeat;
 		background-size: contain;
 	}
