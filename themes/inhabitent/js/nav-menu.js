@@ -60,17 +60,5 @@
 
     });
 
-//     if( $('.home').length || $('.page-template-about') ){
-//       $(document).scroll(function() {
-        
-//         var $position = $(this).scrollTop();
-
-//       });
-  
-// }
-
-      
-    
-
   });
 })(jQuery);

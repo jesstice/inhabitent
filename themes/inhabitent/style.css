@@ -574,15 +574,6 @@ a {
 .main-navigation .search-form .search-submit-hero {
   color: white; }
 
-.main-navigation .search-form ::-webkit-input-placeholder {
-  color: white; }
-
-.main-navigation .search-form :-ms-input-placeholder {
-  color: white; }
-
-.main-navigation .search-form ::placeholder {
-  color: white; }
-
 .main-navigation .search-form input.search-field {
   padding: 0;
   display: none;
@@ -602,6 +593,15 @@ a {
 
 .nav-menu-search-hero #primary-menu li a {
   color: white; }
+
+.nav-menu-search-hero ::-webkit-input-placeholder {
+  color: #f0e4d1; }
+
+.nav-menu-search-hero :-ms-input-placeholder {
+  color: #f0e4d1; }
+
+.nav-menu-search-hero ::placeholder {
+  color: #f0e4d1; }
 
 /* Menus */
 .site-header {

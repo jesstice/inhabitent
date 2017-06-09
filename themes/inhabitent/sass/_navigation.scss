@@ -50,10 +50,6 @@ a {
 			color: white;
 		}
 
-		::placeholder {
-			color: white;
-		}
-
 		// Search Field
 		input.search-field {
 			padding: 0;
@@ -81,10 +77,11 @@ a {
 	#primary-menu li a {
 		color: white;
 	}
+
+	::placeholder {
+		color: $color__yellow-brand;
+	}
 }
-
-
-// <header id="masthead" class="site-header<?php echo  $hero_header ? ' site-header-hero' : '' ?>" 
 
 /* Menus */
 .site-header {
