@@ -109,7 +109,6 @@
 					transition: all 0.1s;
 				}
 			}
-
 		}
 
 		.entry-meta {
@@ -134,7 +133,6 @@
 }
 
 /* Asides */
-
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
 	display: none;
@@ -187,7 +185,7 @@
 	padding: 0;
 
 	.depth-1 {
-		border-bottom: $solid_border;	
+		border-bottom: $solid_border;
 	}
 
 	.comment-body {
@@ -203,7 +201,7 @@
 
 	.children {
 		.comment-body {
-			border-top: $solid_border;	
+			border-top: $solid_border;
 		}
 	}
 }

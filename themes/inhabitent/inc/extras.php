@@ -71,6 +71,8 @@ add_filter( 'get_the_archive_title', function ( $title ) {
     	$title = 'Shop Stuff';
 		} elseif (is_tax( 'product-type' )) {
 			$title = single_term_title( '', false );
+		} elseif (is_post_type_archive( 'adventure' )) {
+			$title = post_type_archive_title( '', false );
 		}
 		return $title;
 });

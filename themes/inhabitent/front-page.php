@@ -87,8 +87,8 @@
     <?php endforeach;
       wp_reset_postdata(); ?>
     </ul>
-
-  <a class="more-adventures" href="#">More Adventures</a>
+  
+  <a class="more-adventures" href="<?php echo get_post_type_archive_link( 'adventure' ); ?>">More Adventures</a>
 </section>
 
 <?php get_footer(); ?>

@@ -26,7 +26,6 @@
     margin-top: 4rem;
     margin-bottom: 4rem;
   }
-
 }
 
 .shop-categories {
@@ -169,7 +168,6 @@
   height: 33rem;
   margin: 0;
   padding: 0;
-  // display: flex;
   list-style: none;
 
   .adventure-display-post {
@@ -189,6 +187,10 @@
         font-weight: normal;
         text-transform: none;
         transition: color 0.1s;
+
+        &:hover {
+          color: $color__yellow-brand;
+        }
       }
     }
 
@@ -354,19 +356,16 @@ a.more-adventures {
     iframe {
       height: 18rem;
       width: 100%;
-    }    
+    }
   }
 }
 
 /* Adventure Pages */
 .single-adventure {
   .adventure-header {
-    // height: 100vh;
-    // overflow: hidden;
 
     img {
       height: auto;
-      // min-height: 100%;
       width: 100%;
     }
   }
@@ -388,6 +387,85 @@ a.more-adventures {
   }
 
 }
+
+// Archive
+.post-type-archive-adventure {
+  .site-main {
+    @include container;
+  
+    header {
+      margin: 0 0 3rem 0;
+      width: 100%;
+      display: flex;
+      align-items: space-around;
+      flex-direction: column;
+      border-bottom: $dashed_border;
+    }
+
+    h1 {
+      width: 100%;
+      margin: 5rem 0 2rem 0;
+      font-size: 2.5rem;
+      text-align: center;
+    }
+  }
+}
+
+.adventure-posts {
+  height: 68rem;
+  margin: 0 0 3rem 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+
+  .adventure-display-post {
+    height: 33rem;
+    width: 49%;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    display: flex;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 58rem;
+    font-size: 2.75rem;
+
+    .adventure-data {
+      top: 0;
+      margin: 0.5rem;
+
+      h3 {
+        color: white;
+        margin: 2rem 0 1rem 0;
+        font-family: $font__main;
+        font-weight: normal;
+        text-transform: none;
+        transition: all 0.1s;
+
+        &:hover {
+          color: $color__yellow-brand;
+        }
+      }
+    }
+
+    .post-read-more {
+      @include button-sizing;
+      background: transparent;
+      border-color: #FFF;
+      color: #FFF;
+      transition: all 0.1s;
+    
+      &:hover {
+        background: $color__green-brand;
+        border-color: $color__green-brand;
+      }
+    }
+
+  }
+}
+
 
 /* Search Page */
 .search-results, .search-no-results {

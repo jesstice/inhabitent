@@ -31,13 +31,13 @@
   }
 
   h1 {
-      width: 100%;
-      margin: 3rem 0 0 0;
-      font-size: 2.5rem;
-      text-align: center;
+    width: 100%;
+    margin: 3rem 0 0 0;
+    font-size: 2.5rem;
+    text-align: center;
   }
 
-   .type-product {
+  .type-product {
     border: $solid_border;
     flex-basis: 23%;
     overflow: hidden;
@@ -76,7 +76,6 @@
         border-bottom: 2px dotted #404040;
         z-index: 0;
       }
-
     }
   }
 }
@@ -136,7 +135,6 @@
       p {
         line-height: 1.75rem;
       }
-
     }
   }
 }
