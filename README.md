@@ -1,5 +1,5 @@
 # Inhabitent Project
-![Screenshot of Inhabitent Home Page](../themes/inhabitent/images/homepage-screenshot.png)
+![Screenshot of Inhabitent Home Page](themes/inhabitent/images/homepage-screenshot.png)
 
 ## Description
 This dynamic multi-page website was built using HTML, CSS, PHP, and jQuery, and using WordPress as a content management system. The site is for Habitent Camping Supply Co., and includes a display of hispter camping products and a blog.
