@@ -72,7 +72,7 @@ add_filter( 'get_the_archive_title', function ( $title ) {
 		} elseif (is_tax( 'product-type' )) {
 			$title = single_term_title( '', false );
 		} elseif (is_post_type_archive( 'adventure' )) {
-			$title = post_type_archive_title( '', false );
+			$title = 'Latest Adventures';
 		}
 		return $title;
 });
