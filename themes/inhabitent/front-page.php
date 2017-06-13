@@ -27,7 +27,7 @@
     <?php foreach ($product_types as $product_type):?>
       <li>
 
-        <img src="<?php echo get_stylesheet_directory_uri() ?>/images/<?php echo $product_type->name ?>.svg">
+        <img src="<?php echo get_stylesheet_directory_uri() ?>/images/<?php echo $product_type->name ?>.svg" alt="<?php echo $product_type->name ?> stuff logo">
         <p><?php echo $product_type->description; ?></p>
         <a href="<?php echo get_term_link($product_type) ?>">
           <h3><?php echo $product_type->name; ?> Stuff</h3>
